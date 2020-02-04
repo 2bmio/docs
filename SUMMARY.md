@@ -4,5 +4,5 @@
 
 ## SKILLS
 
-* [CKA](cka.md)
+* [CKA](skills/cka.md)
 

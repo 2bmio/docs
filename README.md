@@ -1,12 +1,14 @@
-# Initial page
+---
+description: knowledge base
+---
+
+# To Become Masterful → 2BM
 
 
 
 
 
 
-
-{% embed url="https://www.youtube.com/watch?v=1As1CPuyTao" %}
 
 
 
