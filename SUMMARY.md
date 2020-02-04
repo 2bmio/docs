@@ -5,5 +5,8 @@
 ## SKILLS
 
 * [CKA](skills/cka/README.md)
-  * [concepts](skills/cka/concepts.md)
+  * [Concepts](skills/cka/concepts/README.md)
+    * [Workloads](skills/cka/concepts/workloads/README.md)
+      * [Pods](skills/cka/concepts/workloads/pods.md)
+      * [Controllers](skills/cka/concepts/workloads/controllers.md)
 
