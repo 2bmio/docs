@@ -4,5 +4,6 @@
 
 ## SKILLS
 
-* [CKA](skills/cka.md)
+* [CKA](skills/cka/README.md)
+  * [concepts](skills/cka/concepts.md)
 
