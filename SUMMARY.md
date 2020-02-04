@@ -2,3 +2,7 @@
 
 * [To Become Masterful → 2BM](README.md)
 
+## SKILLS
+
+* [CKA](cka.md)
+
