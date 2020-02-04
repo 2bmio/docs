@@ -1,4 +1,4 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [To Become Masterful → 2BM](README.md)
 
