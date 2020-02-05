@@ -21,7 +21,9 @@ So, how big companies growing up the skills of their technicians?
 
 ![Career Levels](.gitbook/assets/firefox_screenshot_2020-02-05t21-43-53.026z.png)
 
+![T&#xE9;cnicos de alto perfil &amp;lt; L3](.gitbook/assets/image.png)
 
+Each level retrieve the salary
 
 
 
