@@ -4,12 +4,9 @@ description: knowledge base
 
 # To Become Masterful → 2BM
 
-![never stop learning](.gitbook/assets/image%20%282%29.png)
-
 > Worst recruiters look for fullstack profiles or some other magic word like senior,  semi-senior, etc. The issue with recruiters is that get profits for quantities not for quality. A rasonable list of job titles include:
 
-* backend engineer
-* cloud architect
+* * cloud architect
 
 > In the major technology organizations the technicians are the most important asset!. They know that and create a way to keep this talent growing into the organization
 
@@ -27,19 +24,21 @@ description: knowledge base
 
 ![for amazon the minimun starting degree is engineer level 4](.gitbook/assets/image%20%281%29.png)
 
-![](.gitbook/assets/image%20%285%29.png)
+![](.gitbook/assets/image%20%286%29.png)
+
+![](.gitbook/assets/image%20%289%29.png)
+
+![](.gitbook/assets/image%20%2811%29.png)
+
+![](.gitbook/assets/image.png)
 
 ![](.gitbook/assets/image%20%288%29.png)
 
 ![](.gitbook/assets/image%20%2810%29.png)
 
-![](.gitbook/assets/image.png)
-
-![](.gitbook/assets/image%20%287%29.png)
-
-![](.gitbook/assets/image%20%289%29.png)
 
 
+![](.gitbook/assets/image%20%284%29.png)
 
 
 
