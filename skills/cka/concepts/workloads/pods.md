@@ -12,7 +12,7 @@ kind: Service
 metadata:
     name: hello
 spec:
-    selector:
+    selector: ←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←
         role: hello ←←←←←←←←←←←←←←←←←←←←←←←←←
 
 ---
@@ -25,8 +25,17 @@ spec:
     replicas: 3
     template:
         metadata:
-            labels:
+            labels: ←←←←←←←←←←←←←←←←←←←←←←←←←
                 role: hello ←←←←←←←←←←←←←←←←←
 
 ```
+
+Overwrite label to put it in quarantine.
+
+```bash
+kubectl label pod hello-79a8sdf99d-g2939 \
+role=quarantine --overwrite
+```
+
+
 
