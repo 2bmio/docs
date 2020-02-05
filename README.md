@@ -4,6 +4,8 @@ description: knowledge base
 
 # To Become Masterful → 2BM
 
+![never stop learning](.gitbook/assets/image%20%282%29.png)
+
 > Worst recruiters look for fullstack profiles or some other magic word like senior,  semi-senior, etc. The issue with recruiters is that get profits for quantities not for quality. A rasonable list of job titles include:
 
 * backend engineer
@@ -21,19 +23,27 @@ description: knowledge base
 
 ![Career Levels](.gitbook/assets/firefox_screenshot_2020-02-05t21-43-53.026z.png)
 
-![T&#xE9;cnicos de alto perfil &amp;lt; L3](.gitbook/assets/image%20%282%29.png)
+![T&#xE9;cnicos de alto perfil &amp;lt; L3](.gitbook/assets/image%20%283%29.png)
 
 ![for amazon the minimun starting degree is engineer level 4](.gitbook/assets/image%20%281%29.png)
 
-![](.gitbook/assets/image%20%284%29.png)
-
-![](.gitbook/assets/image%20%287%29.png)
+![](.gitbook/assets/image%20%285%29.png)
 
 ![](.gitbook/assets/image%20%288%29.png)
 
+![](.gitbook/assets/image%20%2810%29.png)
+
 ![](.gitbook/assets/image.png)
 
-![](.gitbook/assets/image%20%286%29.png)
+![](.gitbook/assets/image%20%287%29.png)
+
+![](.gitbook/assets/image%20%289%29.png)
+
+
+
+
+
+
 
 
 
