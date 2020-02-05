@@ -4,7 +4,12 @@
 
 > Using RULES k8s increase or decrease PODs to satisfy it.
 
-**Where is the magic of HPA?**  → it have an end point what are on the controller what collect the metrics `/metrics`  
+**Where is the magic of HPA?**  → the **controller** have an end point what collect the metrics in  `/metrics`  with CPU/memory/ETC usage
+
+apply manifest to enable metrics on the k8s cluster  
+`kubectl apply -f \ https://github.com/2bmio/peladonerd/tree/master/kubernetes/5/metrics`
+
+
 
 isn't handly scale replicas for each one deployment. On this way the best practice is used  **HPA** with rules that apply → if CPU/Memory is upper to some percentage increase Pod else ...
 
