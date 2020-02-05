@@ -1,6 +1,8 @@
 # Pods
 
-## HPA → horizontal Pod AutoScaling
+## HPA → Horizontal Pod AutoScaling
+
+isn't handly scale replicas for each one deployment. On this way the best practice is used  **HPA** with rules that apply → if CPU is upper to some percentage increase Pod else ... 
 
 ## Quarantine technique → labels + selectorS
 
