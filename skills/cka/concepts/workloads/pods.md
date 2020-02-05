@@ -6,7 +6,7 @@
 
 Service is the handler of traffic cross pod, on that label selector → role → **hello** who match with the same label on the pod send traffic to it.
 
-```text
+```yaml
 apiVersion: v1
 kind: Service
 metadata:
