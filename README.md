@@ -11,7 +11,7 @@ description: knowledge base
 
 > In the major technology organizations the technicians are the most important asset!. They know that and create a way to keep this talent growing into the organization
 
-So, how big companies growing up the skills of their technicians?
+[So, how big companies growing up the skills of their technicians?](https://www.levels.fyi/?compare=Apple,Amazon,Google,Facebook,Microsoft&track=Software%20Engineer#)
 
 * Apple ·········· **ICT** ······ individual contributor technical
 * Amazon ······ **SDE** ····· software development engineer
@@ -21,9 +21,19 @@ So, how big companies growing up the skills of their technicians?
 
 ![Career Levels](.gitbook/assets/firefox_screenshot_2020-02-05t21-43-53.026z.png)
 
-![T&#xE9;cnicos de alto perfil &amp;lt; L3](.gitbook/assets/image.png)
+![T&#xE9;cnicos de alto perfil &amp;lt; L3](.gitbook/assets/image%20%282%29.png)
 
-Each level retrieve the salary
+![for amazon the minimun starting degree is engineer level 4](.gitbook/assets/image%20%281%29.png)
+
+![](.gitbook/assets/image%20%284%29.png)
+
+![](.gitbook/assets/image%20%287%29.png)
+
+![](.gitbook/assets/image%20%288%29.png)
+
+![](.gitbook/assets/image.png)
+
+![](.gitbook/assets/image%20%286%29.png)
 
 
 
