@@ -2,6 +2,8 @@
 
 ## [HPA → Horizontal Pod AutoScaling](https://github.com/kubernetes-sigs/metrics-server)
 
+#### [katacoda example](https://www.katacoda.com/reselbob/scenarios/using-k8s-horizontal-pod-autoscaler)
+
 > Using RULES k8s increase or decrease PODs to satisfy it.
 
 **Where is the magic of HPA?**  → the **controller** have an end point what collect the metrics in  `/metrics`  with CPU/memory/ETC usage
