@@ -1,6 +1,9 @@
 # Minishift
 
-
+```text
+minishift status
+minishift config view
+```
 
 ## Standard
 
