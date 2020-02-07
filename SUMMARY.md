@@ -10,3 +10,9 @@
       * [Pods](skills/cka/concepts/workloads/pods.md)
       * [Controllers](skills/cka/concepts/workloads/controllers.md)
 
+## TOOLS
+
+* [VIR](tools/vir/README.md)
+  * [Microk8s](tools/vir/microk8s.md)
+  * [Minishift](tools/vir/minishift.md)
+
