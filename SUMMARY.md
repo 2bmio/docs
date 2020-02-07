@@ -13,6 +13,7 @@
 ## TOOLS
 
 * [VIR](tools/vir/README.md)
+  * [oVirt](tools/vir/ovirt.md)
   * [Microk8s](tools/vir/microk8s.md)
   * [Minishift](tools/vir/minishift.md)
 
