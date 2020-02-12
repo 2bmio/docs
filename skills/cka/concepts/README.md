@@ -13,6 +13,8 @@ description: >-
 
 ### Kubernetes Control Plane <a id="kubernetes-control-plane"></a>
 
+> kubernetes control plane is **a set of services** that control worker nodes and control nodes
+
 #### Kubernetes Master <a id="kubernetes-master"></a>
 
 #### Kubernetes Nodes <a id="kubernetes-nodes"></a>
