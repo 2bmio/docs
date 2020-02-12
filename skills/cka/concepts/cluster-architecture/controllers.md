@@ -20,11 +20,11 @@ description: >-
 
 #### Direct control <a id="direct-control"></a>
 
+### Desired versus current state <a id="desired-vs-current"></a>
 
+### Design <a id="design"></a>
 
-
-
-
+### Ways of running controllers <a id="running-controllers"></a>
 
 
 
