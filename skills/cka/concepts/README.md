@@ -13,7 +13,14 @@ description: >-
 
 ### Kubernetes Control Plane <a id="kubernetes-control-plane"></a>
 
-> kubernetes control plane is **a set of services** that control worker nodes and control nodes
+> kubernetes control plane consist of the following **components**: 
+>
+> 1. kube-**apiserver**: **allow** user/srv/etc **ineract** with the cluster
+> 2. **etcd**: clustes datastore, **keep** multples controllers in **sync**
+> 3. kube-**scheduler**: **dealing** into the cluster to apply desired **state**
+> 4. \*\*\*\*
+>
+> is **a set of services** that control worker nodes and control nodes
 
 #### Kubernetes Master <a id="kubernetes-master"></a>
 
