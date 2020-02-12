@@ -14,5 +14,19 @@ description: >-
 
 {% embed url="https://www.youtube.com/watch?v=i9V4oCa5f9I" caption="First 2 minutes of this video" %}
 
+### Controller pattern <a id="controller-pattern"></a>
+
+#### Control via API server <a id="control-via-api-server"></a>
+
+#### Direct control <a id="direct-control"></a>
+
+
+
+
+
+
+
+
+
 
 
