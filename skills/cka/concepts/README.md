@@ -18,7 +18,8 @@ description: >-
 > 1. kube-**apiserver**: **allow** user/srv/etc **ineract** with the cluster
 > 2. **etcd**: clustes datastore, **keep** multples controllers in **sync**
 > 3. kube-**scheduler**: **dealing** into the cluster to apply desired **state**
-> 4. \*\*\*\*
+> 4. kube-**controller-manager**: **runs** a series of controllers that provide a wide **range** of functionality.
+> 5. cloud-controller-manager: 
 >
 > is **a set of services** that control worker nodes and control nodes
 
