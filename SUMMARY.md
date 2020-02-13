@@ -5,6 +5,7 @@
 ## SKILLS
 
 * [LFCE](skills/lfce/README.md)
+  * [Packages](skills/lfce/packages.md)
   * [Concepts](skills/lfce/concepts/README.md)
     * [Loops](skills/lfce/concepts/loops.md)
 * [CKA](skills/cka/README.md)
