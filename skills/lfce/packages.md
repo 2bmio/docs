@@ -14,6 +14,7 @@ openssl x509 -text -noout -in (ver todo en formato texto)
 OpenSSH
 
 ```text
+# use credentials from first machine with jumping nodes
 ssh -A root@gitlab.vass.es
 ```
 
