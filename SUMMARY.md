@@ -17,7 +17,7 @@
       * [Controllers](skills/cka/concepts/workloads/controllers.md)
     * [Extending Kubernetes](skills/cka/concepts/extending-kubernetes/README.md)
       * [Operator pattern](skills/cka/concepts/extending-kubernetes/operator-pattern.md)
-* [OCP](skills/ocp/README.md)
+* [OCP](skills/ocp.md)
   * [Cluster Administration](skills/ocp/cluster-administration/README.md)
     * [Secrets](skills/ocp/cluster-administration/secrets.md)
 
