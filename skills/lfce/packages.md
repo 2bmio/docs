@@ -3,10 +3,12 @@
 ## OpenSSL
 
 ```text
-openssl x509 -text -noout -in
+# Check certificate Validity:
+## just notAfter output:
+openssl x509 -enddate -noout -in <cert.name>
 
-openssl x509 -enddate -noout -in <nombre_de_archivo_exportado.crt>
-openssl x509 -text -noout -in (ver todo en formato texto)
+## all the cert info output:
+openssl x509 -text -noout -in <cert.name>
 
 
 ```
