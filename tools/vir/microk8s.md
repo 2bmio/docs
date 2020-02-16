@@ -5,22 +5,12 @@
 ```text
 # get available list for microk8s
 snap info microk8s
-snap info helm
 
 sudo snap install microk8s --classic
 sudo snap install microk8s --classic --channel=1.16/stable
 
 sudo usermod -a -G microk8s $USER
 sudo iptables -P FORWARD ACCEPT
-
-# for install lastest helm binary
-
-sudo snap install helm --classic
-sudo snap install helm --classic --channel=3.1/stable
-
-sudo mkdir /var/snap/microk8s/current/bin
-sudo ln -s /snap/bin/helm /var/snap/microk8s/current/bin/helm
-
 ```
 
 ### Commands
