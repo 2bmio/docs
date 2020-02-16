@@ -24,8 +24,8 @@
 ## TOOLS
 
 * [VIR](tools/vir/README.md)
-  * [Multipass](tools/vir/multipass.md)
   * [oVirt](tools/vir/ovirt.md)
+  * [Multipass](tools/vir/multipass.md)
   * [Microk8s](tools/vir/microk8s.md)
   * [Minishift](tools/vir/minishift.md)
 
