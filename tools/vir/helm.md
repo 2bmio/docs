@@ -20,11 +20,43 @@ sudo ln -s /snap/bin/helm /var/snap/microk8s/current/bin/helm
 
 ```text
 helm version
+helm repo add stable 
+helm search repo mariadb
 
 
+# deprecated
+helm init
+helm repo update
+helm install stable/joomla
 
 
+```
 
+### Components
+
+* CLI
+* Tiller \(deprecated V3\)
+* k8s API
+
+### Vocabulary
+
+* Chart
+* Template
+* Release
+
+## Helm 3
+
+```yaml
+apiVersion: v2
+name: mychart
+description: A Helm chart for k8s
+
+dependencies:
+- name: mariadb
+  version: 5.x.x
+  repository: https://kubernetes-charts.storage.googleapis.com
+  tags:
+    - database
 
 ```
 
