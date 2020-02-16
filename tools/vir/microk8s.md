@@ -16,6 +16,8 @@ sudo iptables -P FORWARD ACCEPT
 # for install lastest helm binary
 
 sudo snap install helm --classic
+sudo snap install helm --classic --channel=3.1/stable
+
 sudo mkdir /var/snap/microk8s/current/bin
 sudo ln -s /snap/bin/helm /var/snap/microk8s/current/bin/helm
 
