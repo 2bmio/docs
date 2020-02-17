@@ -25,7 +25,6 @@ helm search repo mariadb
 
 
 # deprecated
-helm init
 helm repo update
 helm install <name-deploy> stable/joomla
 

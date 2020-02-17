@@ -1,40 +1,50 @@
 # Microk8s
 
-### Install
+
+
+## Header
+
+Your content here
+
+### macOS
 
 ```text
-# # # # # # # # # # # # # # # # 
-#    MICROK8S
-# # # # # # # # # # # # # # # # 
-
-# get available list for microk8s
-snap info microk8s
-
-sudo snap install microk8s --classic
-sudo snap install microk8s --classic --channel=1.16/stable
-
-sudo usermod -a -G microk8s $USER
-sudo iptables -P FORWARD ACCEPT
-
-#---------------------------------------------
-
-# # # # # # # # # # # # # # # # 
-#    KUBECTL
-# # # # # # # # # # # # # # # # 
-
-# get available list for kubectl
-snap info kubectl
-
-sudo snap install kubectl --classic
-sudo snap install kubectl --classic --channel=1.16/stable
-sudo microk8s.kubectl config view --raw > $HOME/.kube/config
-
-
+brew cask install multipass
+multipass launch --name k8s-master --mem 8G --disk 40G
+multipass list
+muttipass shell k8s-master
 ```
 
-### Commands
+### fedora
 
 ```text
+sudo dnf install snapd
+sudo ln -s /var/lib/snapd/snap /snap
+sudo chown $USER:$USER /var/snap/multipass/common/multipass_socket
+
+multipass launch --name k8s-master --mem 8G --disk 40G
+
+example:
+multipass launch --name k8s-master --mem 4G --disk 20G
+multipass launch --name k8s-app-1 --mem 2G --disk 10G
+multipass launch --name k8s-app-2 --mem 2G --disk 10G
+
+multipass list
+muttipass shell k8s-master
+```
+
+### shell
+
+```text
+snap info microk8s
+sudo snap install microk8s --classic
+sudo snap install microk8s --classic --channel=1.16/stable
+sudo iptables -P FORWARD ACCEPT
+
+
+sudo usermod -a -G microk8s $USER
+
+
 microk8s.kubectl get nodes
 microk8s.add-node
   ubuntu@k8s-master:~$ microk8s.add-node
@@ -43,6 +53,12 @@ microk8s.add-node
 microk8s.status
 microk8s.enable --help
 microk8s.enable dns dashboard
+
+# for install lastest helm binary
+
+sudo snap install helm --classic
+sudo mkdir /var/snap/microk8s/current/bin
+sudo ln -s /snap/bin/helm /var/snap/microk8s/current/bin/helm
 
 
 # old way → microk8s.enable dns dashboard ingress helm
@@ -61,12 +77,10 @@ microk8s.kubectl -n kube-system get secret
 
 microk8s.kubectl -n kube-system describe secret kubernetes-dashboard-token-XXXXX
 
+
 microk8s.kubectl port-forward -n kube-system service/kubernetes-dashboard 10443:443 --address 0.0.0.0
+
 
 https://[microk8s-master-ip]:10443
 ```
-
-
-
-
 
