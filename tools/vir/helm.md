@@ -124,11 +124,14 @@ h3 repo add stable https://kubernetes-charts.storage.googleapis.com/
 h3 repo add incubator https://kubernetes-charts-incubator.storage.googleapis.com/
 
 
+
+
 # update repo
 h3 repo update
 
 # list down all the stable charts
 h3 search repo stable
+h3 search repo incubator
 
 # searching Charts
 h3 search hub mysql
