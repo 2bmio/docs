@@ -30,6 +30,16 @@ helm repo update
 helm install <name-deploy> stable/joomla
 
 
+#---------------------------------------------
+
+# # # # # # # # # # # # # # # # 
+#    TESTING INS
+# # # # # # # # # # # # # # # # 
+
+h3 install wordpress stable/wordpress
+k get services
+h3 delete --purge wordpress
+
 ```
 
 ### Components
