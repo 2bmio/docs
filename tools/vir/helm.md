@@ -69,7 +69,60 @@ dependencies:
 * dependencies: ...
 {% endhint %}
 
+### Migrating
+
+```text
+# installin plugins
+
+h3 plugin install https://github.com/helm/helm-2to3
+h3 plugin list
+h3 2to3
+
+# helm3 2to3 move config -h
+
+```
+
 ### Local Chart
+
+```text
+
+```
+
+### Remote Charts
+
+```text
+# adding Helm chart
+h3 repo add stable https://kubernetes-charts.storage.googleapis.com/
+
+# update repo
+h3 repo update
+
+# list down all the stable charts
+h3 search repo stable
+
+# searching Charts
+h3 search hub mysql
+h3 search repo mysql
+h3 repo list
+
+# install
+h3 install <release-name> <chart-name>
+
+
+# you can see all your releases with
+h3 list
+
+# for modify the default chart values, you can show the values with:
+h3 show value <release-name>/<chart-name>
+# or
+h3 install --set mysqlPassword=admin,mysqlUser=admin stable/mysql
+```
+
+
+
+
+
+
 
 
 
