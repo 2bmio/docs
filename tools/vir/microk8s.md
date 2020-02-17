@@ -29,6 +29,7 @@ sudo snap install microk8s --classic
 sudo snap install microk8s --classic --channel=1.16/stable
 microk8s.kubectl config view --raw > $HOME/.kube/config
 
+
 ```
 
 ### Commands
