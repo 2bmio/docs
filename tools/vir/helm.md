@@ -90,6 +90,7 @@ h3 create <NameChart>
 
 # Install 
 h3 install [NAME] [CHART → ./<NameChart>]
+
 # Not install anything but print final template
 h3 install [NAME] [CHART → ./<NameChart>] [flags  < --debug --dry-run >]
 
