@@ -51,9 +51,7 @@ http://nextcloud.kube.home
 
 ```
 
-### Co
-
-### mponents
+### Components
 
 * CLI
 * Tiller \(deprecated V3\)
