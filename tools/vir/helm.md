@@ -46,10 +46,14 @@ helm install stable/joomla
 
 ## Helm 3
 
+{% hint style="info" %}
+new **Chart.yaml** declaration way:
+
 ```yaml
 apiVersion: v2
 name: mychart
 description: A Helm chart for k8s
+type: library
 
 dependencies:
 - name: mariadb
@@ -59,4 +63,11 @@ dependencies:
     - database
 
 ```
+
+* apiVersion: v2
+* type: library
+* dependencies: ...
+{% endhint %}
+
+
 
