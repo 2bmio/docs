@@ -88,7 +88,12 @@ h3 plugin install https://github.com/helm/helm-2to3
 h3 plugin list
 h3 2to3
 
-# helm3 2to3 move config -h
+# migrate 
+h3 2to3 move config -h
+h3 2to3 move config ./<NameChart>  --dry-run
+
+
+
 
 ```
 
@@ -116,6 +121,8 @@ h3 uninstall <release-name>
 ```text
 # adding Helm chart
 h3 repo add stable https://kubernetes-charts.storage.googleapis.com/
+h3 repo add incubator https://kubernetes-charts-incubator.storage.googleapis.com/
+
 
 # update repo
 h3 repo update
