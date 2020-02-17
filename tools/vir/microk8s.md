@@ -3,6 +3,10 @@
 ### Install
 
 ```text
+# # # # # # # # # # # # # # # # 
+#    MICROK8S
+# # # # # # # # # # # # # # # # 
+
 # get available list for microk8s
 snap info microk8s
 
@@ -12,12 +16,18 @@ sudo snap install microk8s --classic --channel=1.16/stable
 sudo usermod -a -G microk8s $USER
 sudo iptables -P FORWARD ACCEPT
 
+#---------------------------------------------
+
+# # # # # # # # # # # # # # # # 
+#    KUBECTL
+# # # # # # # # # # # # # # # # 
 
 # get available list for kubectl
 snap info kubectl
 
 sudo snap install microk8s --classic
 sudo snap install microk8s --classic --channel=1.16/stable
+microk8s.kubectl config view --raw > $HOME/.kube/config
 
 ```
 
