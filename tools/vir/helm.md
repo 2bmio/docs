@@ -35,10 +35,25 @@ helm install <name-deploy> stable/joomla
 #    TESTING INS
 # # # # # # # # # # # # # # # # 
 
+h3 install next-cloud \
+--set nextcloud.username=admin,nextcloud.password=password \
+stable/nextcloud
+
+
+k port-forward -n default service/next-cloud-nextcloud 8080:8080 --address 0.0.0.0
+
+
+# add your /etc/hosts
+<multipass-machine-IP> nextcloud.kube.home
+
+# go to
+http://nextcloud.kube.home
 
 ```
 
-### Components
+### Co
+
+### mponents
 
 * CLI
 * Tiller \(deprecated V3\)
