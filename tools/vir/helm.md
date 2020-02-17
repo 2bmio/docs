@@ -85,7 +85,19 @@ h3 2to3
 ### Local Chart
 
 ```text
+# Create Your Own Chart
+h3 create <NameChart>
 
+# Install 
+h3 install ./<NameChart>
+# Not install anything but print final template
+h3 install --debug --dry-run ./<NameChart>
+
+# get info
+h3 get manifest <release-name>
+
+# 
+h3 uninstall <release-name>
 ```
 
 ### Remote Charts
