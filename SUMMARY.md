@@ -23,7 +23,7 @@
 
 ## TOOLS
 
-* [VIR](tools/vir/README.md)
+* [SRE](tools/vir/README.md)
   * [Helm](tools/vir/helm.md)
   * [oVirt](tools/vir/ovirt.md)
   * [Multipass](tools/vir/multipass.md)
