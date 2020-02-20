@@ -4,6 +4,8 @@
 
 ## SKILLS
 
+* [RHCSA](skills/rhcsa.md)
+* [RHCE](skills/rhce.md)
 * [LFCE](skills/lfce/README.md)
   * [Packages](skills/lfce/packages.md)
   * [Concepts](skills/lfce/concepts/README.md)
