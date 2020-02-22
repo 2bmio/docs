@@ -20,10 +20,12 @@ snap info popeye
 ### commons commands
 
 ```text
-popeye
+popeye --kubeconfig=~/.kube/config
+
 SUMMARY
 ┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
-Your cluster score: 3 -- F
+Your cluster score: 84 -- B
+
 
 ```
 
