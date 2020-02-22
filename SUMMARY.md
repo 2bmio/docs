@@ -28,6 +28,7 @@
 ## TOOLS
 
 * [SRE](tools/vir/README.md)
+  * [Tools](tools/vir/tools.md)
   * [Ansible](tools/vir/ansible.md)
   * [Helm](tools/vir/helm.md)
   * [oVirt](tools/vir/ovirt.md)
