@@ -3,9 +3,13 @@
 ## kubectl commands
 
 ```text
-# TIP 1
+# TIP 1 → k completion
+## add to zsh
+echo "if [ $commands[kubectl] ]; then source <(kubectl completion zsh); fi" >> ~/.zshrc
+## add to bash
 
-k completion
+## add to sshrc
+
 
 # TIP 2
 
