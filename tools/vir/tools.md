@@ -15,7 +15,15 @@ snap install popeye
 
 # get info about popeye
 snap info popeye
+```
 
+### commons commands
+
+```text
+popeye
+SUMMARY
+┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
+Your cluster score: 3 -- F
 
 ```
 
