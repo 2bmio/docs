@@ -29,7 +29,7 @@ Your cluster score: 84 -- B
 
 ```
 
-## Git
+## [Git](https://education.github.com/git-cheat-sheet-education.pdf)
 
 ### common commands
 
