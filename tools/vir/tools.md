@@ -47,3 +47,12 @@ git submodule update --recursive --remote
 git pull --recurse-submodules
 ```
 
+## Ansible
+
+### common commands
+
+```text
+# run independent playbooks
+ANSIBLE_CONFIG=./ansible.cfg ansible-playbook playbook.yml --flush-cache
+```
+
