@@ -29,3 +29,11 @@ Your cluster score: 84 -- B
 
 ```
 
+## Git
+
+```text
+# check if local repo is up to date
+git fetch -v --dry-run
+
+```
+
