@@ -56,3 +56,7 @@ git pull --recurse-submodules
 ANSIBLE_CONFIG=./ansible.cfg ansible-playbook playbook.yml --flush-cache
 ```
 
+### course
+
+
+
