@@ -37,5 +37,13 @@ Your cluster score: 84 -- B
 # check if local repo is up to date
 git fetch -v --dry-run
 
+# download submodules
+## Pull all submodules using
+git submodule update --init --recursive
+
+## update submodules
+git submodule update --recursive --remote
+### or
+git pull --recurse-submodules
 ```
 
