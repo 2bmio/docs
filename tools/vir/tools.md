@@ -17,7 +17,7 @@ snap install popeye
 snap info popeye
 ```
 
-### commons commands
+### common commands
 
 ```text
 popeye --kubeconfig=~/.kube/config
@@ -30,6 +30,8 @@ Your cluster score: 84 -- B
 ```
 
 ## Git
+
+### common commands
 
 ```text
 # check if local repo is up to date
