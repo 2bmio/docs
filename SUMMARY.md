@@ -30,6 +30,8 @@
 
 ## TOOLS
 
+* [LOS](tools/los/README.md)
+  * [Distos](tools/los/distos.md)
 * [SRE](tools/vir/README.md)
   * [Tips](tools/vir/tips.md)
   * [Tools](tools/vir/tools.md)
