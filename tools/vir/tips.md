@@ -1,6 +1,6 @@
 # Tips
 
-## K8S ninja
+## kubectl ninja commands
 
 1. **Kubectl Autocomplete**
    1. ```text
@@ -61,46 +61,7 @@
        kubectl api-resources
        ```
 
-## SSH ninja
-
-1. **Agent fordwarding**
-   1. ```text
-      Procedimiento para poder acceder a un servidor (remotehost) al que necesitemos entrar mediante una máquina de salto (jumpserver) con una clave privada que tengamos en nuestro host sin tener que copiarla a la máquina de salto (para no exponer la clave).
-      Valdría también para hacer pull a un repo en un host remoto usando nuestras claves de github, por ejemplo, sin copiar estas al host.
-
-      Usamos SSH agent forwarding:
-
-      El procedimiento es comprobar si el ssh-agent está arrancado:
-
-      	$ ssh-agent
-
-      Y si no lo está arrancarlo:
-
-      	$ eval `ssh-agent`
-
-      Añadir la clave (o claves) que queramos usar al agente:
-
-      	$ ssh-add my_private_key.pem
-
-      Comprobar qué claves están añadidas al agente:
-
-      	$ ssh-add -l
-
-      Conectarnos al jumpserver con el flag -A para activar el agent forwarding
-
-      	$ ssh -A -i my_private_key.pem user@jumpserver
-
-      Y desde el jumpserver ya podremos hacer ssh al host remoto usando nuestra clave privada sin tener que exponerla, el agent forwarding se encargará de reenviar las credenciales desde nuestro host si son necesarias:
-
-      	jumpserver$ ssh user@remotehost
-
-      Un poco de literatura:
-
-      https://www.ssh.com/ssh/agent
-
-      https://dev.to/levivm/how-to-use-ssh-and-ssh-agent-forwarding-more-secure-ssh-2c32
 
 
 
-      ```
 

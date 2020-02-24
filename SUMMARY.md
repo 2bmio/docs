@@ -5,7 +5,7 @@
 ## SKILLS
 
 * [RHCSA](skills/rhcsa/README.md)
-  * [124](skills/rhcsa/124/README.md)
+  * [124](skills/rhcsa/124.md)
     * [essential → bash](skills/rhcsa/124/essential-bash.md)
   * [134](skills/rhcsa/134.md)
 * [RHCE](skills/rhce.md)
