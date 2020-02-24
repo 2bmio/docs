@@ -12,7 +12,8 @@
 
 ```text
 # install packages
-rpm-ostree install htop
+rpm-ostree install htop python3 pip
+
 ```
 
 #### playground
