@@ -139,12 +139,6 @@ $ packer build \
 
 ### packages
 
-```text
-# Fedora CoreOS Config Transpiler 
-# https://github.com/coreos/fcct
-./fcct --input fcos.yml --pretty --output fcos.json
-```
-
 ## Terraform
 
 ### common commands
