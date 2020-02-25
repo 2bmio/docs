@@ -35,19 +35,9 @@ helm install <name-deploy> stable/joomla
 #    TESTING INS
 # # # # # # # # # # # # # # # # 
 
-h3 install next-cloud \
---set nextcloud.username=admin,nextcloud.password=password \
-stable/nextcloud
-
-
-k port-forward -n default service/next-cloud-nextcloud 8080:8080 --address 0.0.0.0
-
-
-# add your /etc/hosts
-<multipass-machine-IP> nextcloud.kube.home
-
-# go to
-http://nextcloud.kube.home
+h3 install wordpress stable/wordpress
+k get services
+h3 delete --purge wordpress
 
 ```
 
@@ -123,10 +113,6 @@ h3 get manifest <release-name>
 
 # 
 h3 uninstall <release-name>
-
-
-h3 pull incubator/rundeck --untar
-h3 create own-rundeck
 ```
 
 ### Remote Charts
