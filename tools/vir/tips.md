@@ -115,10 +115,19 @@
 ### CPU output
 
 ```text
+# get CPU env
+
 grep physical.id /proc/cpuinfo | sort -u | wc -l
 grep cpu.cores /proc/cpuinfo
 grep processor /proc/cpuinfo | sort -u | wc -l
 grep processor /proc/cpuinfo | wc -l
 cat /proc/cpuinfo
+
+# get CPU usage
+ps -eo user,pid,ppid,cmd,%mem,%cpu,stat,start --sort=-%cpu | head
+watch "ps -eo user,pid,ppid,cmd,%mem,%cpu,stat,start --sort=-%cpu | head"
+
 ```
+
+
 
