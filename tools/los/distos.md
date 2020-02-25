@@ -15,6 +15,9 @@
 rpm-ostree refresh-md 
 rpm-ostree install htop python3 pip
 
+
+
+
 ```
 
 #### playground
