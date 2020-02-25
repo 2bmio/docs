@@ -139,6 +139,20 @@ $ packer build \
 
 ## Terraform
 
+### common commands
+
+```text
+
+```
+
+### concepts
+
+* domain providers \(aws-gcp-azure-etc\)
+* create replicable platforms
+* develop complex infrastructures
+* create modules and reuse it. use community modules
+* use packer
+
 ## CloudFormation
 
 ## AWS
