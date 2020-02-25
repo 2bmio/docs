@@ -120,7 +120,7 @@ by:
   group: salesforce
 ```
 
-## [Packer](https://packer.io/intro/getting-started/build-image.html)
+## [Packer](https://packer.io/docs/builders/qemu.html)
 
 ### common commands
 
