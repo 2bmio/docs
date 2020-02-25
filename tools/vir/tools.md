@@ -145,13 +145,40 @@ $ packer build \
 
 ```
 
-### concepts
+### concept - general
 
 * domain providers \(aws-gcp-azure-etc\)
 * create replicable platforms
 * develop complex infrastructures
 * create modules and reuse it. use community modules
 * use packer
+
+### concept - provider
+
+### concept - template
+
+* first resource
+* states
+* variables
+* outputs
+* data sources
+* templates
+
+### concept - import resource and modify
+
+### concept - complex templates
+
+* create n resource
+* create reusable templates
+* create ans asociate multple resource
+
+### concept - advance
+
+* backend
+* modules
+* community modules
+
+
 
 ## CloudFormation
 
