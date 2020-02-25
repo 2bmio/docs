@@ -120,7 +120,7 @@ by:
   group: salesforce
 ```
 
-## [Packer](https://packer.io/docs/builders/qemu.html)
+## [Packer](https://packer.io/docs/builders/index.html)
 
 ### common commands
 
@@ -134,6 +134,8 @@ $ packer build \
     -var 'aws_secret_key=YOUR SECRET KEY' \
     example.json
 ```
+
+> Packer is a tool focused on create **custom OS** using **templetes** what can be **versionated**.
 
 ## Terraform
 
