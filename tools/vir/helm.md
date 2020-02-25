@@ -123,6 +123,10 @@ h3 get manifest <release-name>
 
 # 
 h3 uninstall <release-name>
+
+
+h3 pull incubator/rundeck --untar
+h3 create own-rundeck
 ```
 
 ### Remote Charts
