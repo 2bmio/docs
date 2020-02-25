@@ -140,7 +140,8 @@ $ packer build \
 ### packages
 
 ```text
-https://github.com/coreos/fcct
+# Fedora CoreOS Config Transpiler 
+# https://github.com/coreos/fcct
 ./fcct --input fcos.yml --pretty --output fcos.json
 ```
 
