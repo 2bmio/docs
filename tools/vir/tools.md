@@ -202,5 +202,32 @@ $ packer build \
 sudo dnf install libxslt-devel libxml2-devel libvirt-devel libguestfs-tools-c ruby-devel gcc
 CONFIGURE_ARGS='with-ldflags=-L/opt/vagrant/embedded/lib with-libvirt-include=/usr/include/libvirt with-libvirt-lib=/usr/lib' GEM_HOME=~/.vagrant.d/gems GEM_PATH=$GEM_HOME:/opt/vagrant/embedded/gems PATH=/opt/vagrant/embedded/bin:$PATH vagrant plugin install vagrant-libvirt
 
+vagrant plugin install vagrant-hostmanager
 ```
+
+## Virtualization
+
+### common commands
+
+```text
+## uncompatible kvm and virtualbox at same time.
+# kvm
+systemctl status libvirtd
+systemctl start libvirtd
+systemctl enable libvirtd
+systemctl stop libvirtd
+
+# virtualbox
+systemctl status vboxautostart-service.service
+systemctl enable vboxautostart-service.service
+systemctl start vboxautostart-service.service
+systemctl stop vboxautostart-service.service
+
+
+
+```
+
+### VirtualBox
+
+
 
