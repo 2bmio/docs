@@ -199,7 +199,7 @@ $ packer build \
 ```text
 # fedora
 ## install vagrant-libvirt
-sudo dnf install libssh-devel libxslt-devel libxml2-devel libvirt-devel libguestfs-tools-c ruby-devel gcc
+sudo dnf install libxslt-devel libxml2-devel libvirt-devel libguestfs-tools-c ruby-devel gcc
 CONFIGURE_ARGS='with-ldflags=-L/opt/vagrant/embedded/lib with-libvirt-include=/usr/include/libvirt with-libvirt-lib=/usr/lib' GEM_HOME=~/.vagrant.d/gems GEM_PATH=$GEM_HOME:/opt/vagrant/embedded/gems PATH=/opt/vagrant/embedded/bin:$PATH vagrant plugin install vagrant-libvirt
 
 ```
