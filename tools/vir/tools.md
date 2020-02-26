@@ -58,5 +58,147 @@ ANSIBLE_CONFIG=./ansible.cfg ansible-playbook playbook.yml --flush-cache
 
 ### course
 
+## Rundeck
 
+### common commands
+
+```text
+############# CREATE USER
+https://geekdudes.wordpress.com/2018/02/09/creating-rundec-acl-policies/
+
+ejemplo crear usuario salesforce:
+
+/etc/rundeck/salesforce.aclpolicy
+/etc/rundeck/realm.properties
+
+
+[root@libs01 rundeck]# cat /etc/rundeck/salesforce.aclpolicy
+description: salesforce, all access.
+context:
+  project: 'PibankTest' # all projects
+for:
+  resource:
+    - equals:
+        kind: event
+      allow: [read]
+  adhoc:
+    - deny: [read,running,killing] # allow read/running/killing adhoc jobs
+  job:
+    - equals:
+        name: 'chmod_tmp_sdl.log'
+      allow: [read,run,kill] # allow read/write/delete/run/kill of all jobs
+  node:
+    - allow: [read,run]
+by:
+  group: salesforce
+
+---
+
+description: salesforce, all access.
+context:
+  application: 'rundeck'
+for:
+  resource:
+    - equals:
+        kind: project
+      deny: [create] # deny create of projects
+    - equals:
+        kind: system
+      deny: [read] # allow read of system info
+    - equals:
+        kind: user
+      deny: [admin] # allow modify user profiles
+  project:
+    - equals:
+        name: 'PibankTest'
+      allow: [read] # allow access
+      deny: [import,export,configure,delete] # deny admin actions
+  storage:
+    - allow: [read]
+    - deny: [admin,create] # allow access for /keys/* storage content
+by:
+  group: salesforce
+```
+
+## [Packer](https://packer.io/docs/builders/index.html)
+
+### common commands
+
+```text
+# validate
+$ packer validate example.json
+
+# build
+$ packer build \
+    -var 'aws_access_key=YOUR ACCESS KEY' \
+    -var 'aws_secret_key=YOUR SECRET KEY' \
+    example.json
+```
+
+> Packer is a tool focused on create **custom OS** using **templetes** what can be **versionated**.
+
+### packages
+
+## Terraform
+
+### common commands
+
+```text
+
+```
+
+### concept - general
+
+* domain providers \(aws-gcp-azure-etc\)
+* create replicable platforms
+* develop complex infrastructures
+* create modules and reuse it. use community modules
+* use packer
+
+### concept - provider
+
+### concept - template
+
+* first resource
+* states
+* variables
+* outputs
+* data sources
+* templates
+
+### concept - import resource and modify
+
+### concept - complex templates
+
+* create n resource
+* create reusable templates
+* create ans asociate multple resource
+
+### concept - advance
+
+* backend
+* modules
+* community modules
+
+
+
+## CloudFormation
+
+## AWS
+
+## Vagrant
+
+### common commands
+
+```text
+
+```
+
+### packages and addons
+
+```text
+# fedora
+## vagrant-libvirt
+CONFIGURE_ARGS='with-ldflags=-L/opt/vagrant/embedded/lib with-libvirt-include=/usr/include/libvirt with-libvirt-lib=/usr/lib' GEM_HOME=~/.vagrant.d/gems GEM_PATH=$GEM_HOME:/opt/vagrant/embedded/gems PATH=/opt/vagrant/embedded/bin:$PATH vagrant plugin install vagrant-libvirt
+```
 
