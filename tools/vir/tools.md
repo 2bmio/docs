@@ -215,7 +215,9 @@ vagrant plugin install vagrant-hostmanager
 systemctl status libvirtd
 systemctl start libvirtd
 systemctl enable libvirtd
+systemctl disable libvirtd
 systemctl stop libvirtd
+
 
 # virtualbox
 systemctl status vboxautostart-service.service
