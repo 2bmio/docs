@@ -26,15 +26,15 @@ description: knowledge base
 
 ![](.gitbook/assets/image%20%288%29.png)
 
-![](.gitbook/assets/image%20%2811%29.png)
+![](.gitbook/assets/image%20%2812%29.png)
 
-![](.gitbook/assets/image%20%2813%29.png)
+![](.gitbook/assets/image%20%2814%29.png)
 
 ![](.gitbook/assets/image%20%281%29.png)
 
-![](.gitbook/assets/image%20%2810%29.png)
+![](.gitbook/assets/image%20%2811%29.png)
 
-![](.gitbook/assets/image%20%2812%29.png)
+![](.gitbook/assets/image%20%2813%29.png)
 
 ## [VASS](http://canalempleo.vass.es/planes-de-carrera)
 
@@ -42,7 +42,9 @@ description: knowledge base
 
 
 
+## Statistics
 
+![](.gitbook/assets/image%20%2810%29.png)
 
 
 

@@ -5,7 +5,7 @@
 ## SKILLS
 
 * [RHCSA](skills/rhcsa/README.md)
-  * [124](skills/rhcsa/124.md)
+  * [124](skills/rhcsa/124/README.md)
     * [essential → bash](skills/rhcsa/124/essential-bash.md)
   * [134](skills/rhcsa/134.md)
 * [RHCE](skills/rhce.md)
@@ -22,7 +22,7 @@
       * [Controllers](skills/cka/concepts/workloads/controllers.md)
     * [Extending Kubernetes](skills/cka/concepts/extending-kubernetes/README.md)
       * [Operator pattern](skills/cka/concepts/extending-kubernetes/operator-pattern.md)
-* [OCP](skills/ocp.md)
+* [OCP](skills/ocp/README.md)
   * [Applications](skills/ocp/applications/README.md)
     * [Quotas](skills/ocp/applications/quotas.md)
   * [Cluster Administration](skills/ocp/cluster-administration/README.md)
