@@ -162,6 +162,9 @@ du -sm * | sort -nr
 cd /var/log
 du -ksh * | sort -h
 
+# list block devices
+lsblk
+
 ```
 
 ### MODELING output
