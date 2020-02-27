@@ -6,6 +6,16 @@
 
 ## Based on Red Hat
 
+## RHEL
+
+### common commands
+
+```text
+subcription-manager list
+subcription-manager list --available
+
+```
+
 ### [Fedora CoreOS](https://docs.fedoraproject.org/en-US/fedora-coreos/faq/) <a id="_what_are_the_communication_channels_around_fedora_coreos"></a>
 
 #### common commands
