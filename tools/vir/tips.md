@@ -67,6 +67,7 @@
 10. **Traerte los recursos disponibles**
     1. ```text
        kubectl api-resources
+       kubectl api-versions
        ```
 
 ## SSH ninja
