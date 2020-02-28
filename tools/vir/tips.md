@@ -1,5 +1,11 @@
 # Tips
 
+## BASH ninja
+
+```text
+bash --rcfile /tmp/.xx.sshrc.XXXX/sshrc.bashrc
+```
+
 ## K8S ninja
 
 1. **Kubectl Autocomplete**
