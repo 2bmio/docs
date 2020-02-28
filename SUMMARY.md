@@ -30,6 +30,8 @@
 
 ## TOOLS
 
+* [SEC](tools/sec/README.md)
+  * [KAV](tools/sec/kav.md)
 * [LOS](tools/los/README.md)
   * [Distos](tools/los/distos.md)
 * [SRE](tools/vir/README.md)
