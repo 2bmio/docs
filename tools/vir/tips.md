@@ -23,8 +23,6 @@ bash --rcfile /tmp/.xx.sshrc.XXXX/sshrc.bashrc
       echo "source <(kubectl completion bash)" >> ~/.sshrc
 
       ```
-
-      &lt;
 2. **Kubectl delete from file**
    1. ```text
       kubectl apply -f manifest.yaml
