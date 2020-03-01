@@ -8,6 +8,18 @@ bash --rcfile /tmp/.xx.sshrc.XXXX/sshrc.bashrc
 
 ## K8S ninja
 
+### essential
+
+```text
+# use versions
+KUBECTLVERSION=v1.16.6
+curl -LO https://storage.googleapis.com/kubernetes-release/release/$KUBECTLVERSION/bin/linux/amd64/kubectl
+mv kubectl kubectl-$KUBECTLVERSION && mv kubectl-$KUBECTLVERSION ~/.kube/bin/ 
+sudo ln -s ~/.kube/bin/kubectl-$KUBECTLVERSION /usr/local/bin/kubectl
+
+
+```
+
 1. **Kubectl Autocomplete**
    1. ```text
       source <(kubectl completion zsh)
