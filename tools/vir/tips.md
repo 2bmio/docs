@@ -8,14 +8,17 @@ bash --rcfile /tmp/.xx.sshrc.XXXX/sshrc.bashrc
 
 ## K8S ninja
 
-### essential
+### [Essential](https://agrimprasad.com/post/supercharge-kubernetes-setup/)
 
 ```text
 # use versions
 KUBECTLVERSION=v1.16.6
 curl -LO https://storage.googleapis.com/kubernetes-release/release/$KUBECTLVERSION/bin/linux/amd64/kubectl
-mv kubectl kubectl-$KUBECTLVERSION && mv kubectl-$KUBECTLVERSION ~/.kube/bin/ 
-sudo ln -s ~/.kube/bin/kubectl-$KUBECTLVERSION /usr/local/bin/kubectl
+mv kubectl kubectl-$KUBECTLVERSION && mv kubectl-$KUBECTLVERSION ~/.kube/01-extras/bin/
+sudo ln -s ~/.kube/01-extras/bin/kubectl-$KUBECTLVERSION /usr/local/bin/kubectl
+
+# kube-ps1
+
 
 
 ```
