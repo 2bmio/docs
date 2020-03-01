@@ -76,6 +76,35 @@ bash --rcfile /tmp/.xx.sshrc.XXXX/sshrc.bashrc
        kubectl api-versions
        ```
 
+### [Plugins](https://github.com/kubernetes-sigs/krew)
+
+```text
+# show all plugins
+kubectl krew search
+
+# install a plugin named "view-secret"
+kubectl krew install XXXXXX
+
+# use the plugin
+kubectl XXXXXX
+
+# upgrade installed plugins
+kubectl krew upgrade
+
+# uninstall a plugin
+kubectl krew uninstall view-secret
+
+config-cleanup                  Automatically clean up your kubeconfig              no
+get-all                         Like `kubectl get all` but _really_ everything      no
+
+
+
+
+
+
+
+```
+
 ## SSH ninja
 
 1. **Agent fordwarding**
