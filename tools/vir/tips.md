@@ -78,6 +78,8 @@ bash --rcfile /tmp/.xx.sshrc.XXXX/sshrc.bashrc
 
 ### [Plugins](https://github.com/kubernetes-sigs/krew)
 
+#### Krew
+
 ```text
 # show all plugins
 kubectl krew search
@@ -107,8 +109,13 @@ view-serviceaccount-kubeconfig  Show a kubeconfig setting to access the apiserv.
 
 
 
-
 ```
+
+#### [Stern](https://github.com/wercker/stern)
+
+#### [Kubeselect](https://github.com/fatliverfreddy/kubeselect)
+
+## `kubens`
 
 ## SSH ninja
 
