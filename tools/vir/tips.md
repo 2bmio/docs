@@ -113,7 +113,30 @@ view-serviceaccount-kubeconfig  Show a kubeconfig setting to access the apiserv.
 
 #### [Kubeselect](https://github.com/fatliverfreddy/kubeselect)
 
-## `kubens`
+#### [Kubectx / Kubens](https://github.com/ahmetb/kubectx)
+
+```text
+USAGE:
+  kubectx                   : list the contexts
+  kubectx <NAME>            : switch to context <NAME>
+  kubectx -                 : switch to the previous context
+  kubectx -c, --current     : show the current context name
+  kubectx <NEW_NAME>=<NAME> : rename context <NAME> to <NEW_NAME>
+  kubectx <NEW_NAME>=.      : rename current-context to <NEW_NAME>
+  kubectx -d <NAME>         : delete context <NAME> ('.' for current-context)
+                              (this command won't delete the user/cluster entry
+                              that is used by the context)
+  kubectx -u, --unset       : unset the current context
+
+USAGE:
+  kubens                    : list the namespaces
+  kubens <NAME>             : change the active namespace
+  kubens -                  : switch to the previous namespace
+  kubens -c, --current      : show the current namespace
+
+```
+
+#### 
 
 ## SSH ninja
 
