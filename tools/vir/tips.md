@@ -96,7 +96,8 @@ kubectl krew uninstall view-secret
 
 config-cleanup                  Automatically clean up your kubeconfig              no
 get-all                         Like `kubectl get all` but _really_ everything      no
-
+resource-capacity               Provides an overview of resource requests, limi...  no
+resource-snapshot               Prints a snapshot of nodes, pods and HPAs resou...  no
 
 
 
