@@ -318,6 +318,7 @@ snap info kubectl
 
 sudo snap install kubectl --classic
 sudo snap install kubectl --classic --channel=1.16/stable
+mkdir ~/.kube
 sudo microk8s.kubectl config view --raw > $HOME/.kube/config
 
 
