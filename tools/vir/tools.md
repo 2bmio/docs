@@ -275,8 +275,15 @@ multipass launch --name k8s-app-2 --mem 2G --disk 10G
 # getting on
 multipass list
 muttipass shell k8s-master
+
 ## using classic ssh with key
-ssh ubuntu@<multipass-ip> -i .ssh/id_mpss
+### copy the new key to user path
+sudo cp /var/snap/multipass/common/data/multipassd/ssh-keys/id_rsa ~/.ssh/id_mpss
+### change permissions
+sudo chown $USER:$USER ~/.ssh/id_mpss
+### connect
+ssh ubuntu@<multipass-ip> -i ~/.ssh/id_mpss
+
 
 ```
 
