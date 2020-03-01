@@ -40,7 +40,6 @@
   * [Ansible](tools/vir/ansible.md)
   * [Helm](tools/vir/helm.md)
   * [oVirt](tools/vir/ovirt.md)
-  * [Multipass](tools/vir/multipass.md)
   * [Microk8s](tools/vir/microk8s.md)
   * [Minishift](tools/vir/minishift.md)
 
