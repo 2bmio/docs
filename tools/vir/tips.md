@@ -15,7 +15,7 @@ bash --rcfile /tmp/.xx.sshrc.XXXX/sshrc.bashrc
 KUBECTLVERSION=v1.16.6
 curl -LO https://storage.googleapis.com/kubernetes-release/release/$KUBECTLVERSION/bin/linux/amd64/kubectl
 mv kubectl kubectl-$KUBECTLVERSION && mv kubectl-$KUBECTLVERSION ~/.kube/01-extras/bin/
-sudo ln -s ~/.kube/01-extras/bin/kubectl-$KUBECTLVERSION /usr/local/bin/kubectl
+sudo ln -sf ~/.kube/01-extras/bin/kubectl-$KUBECTLVERSION /usr/local/bin/kubectl
 
 # kube-ps1
 
