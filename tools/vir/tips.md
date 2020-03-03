@@ -234,7 +234,9 @@ $ find /proc -maxdepth 2 -path "/proc/[0-9]*/status" -readable -exec awk -v FS="
 
 ###################
 Print state
-awk '$3=="kB"{if ($2>1024^2){$2=$2/1024^2;$3="GB";} else if ($2>1024){$2=$2/1024;$3="MB";}} 1' /proc/meminfo | column -t
+
+$ awk '$3=="kB"{if ($2>1024^2){$2=$2/1024^2;$3="GB";} else if ($2>1024){$2=$2/1024;$3="MB";}} 1' /proc/meminfo | column -t
+
 MemTotal:           19.3539  GB
 MemFree:            6.9542   GB
 MemAvailable:       15.3463  GB
