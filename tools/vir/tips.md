@@ -121,7 +121,8 @@ sniff                           Start a remote packet capture on pods using tcp.
 view-secret                     Decode Kubernetes secrets                           no
 view-serviceaccount-kubeconfig  Show a kubeconfig setting to access the apiserv...  no
 
-
+kubectl get sectrets
+kubectl view-secret XXXX
 
 ```
 
