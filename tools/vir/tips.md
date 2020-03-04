@@ -269,3 +269,13 @@ man sort
   -n, --numeric-sort          compare according to string numerical value
 ```
 
+## Vi - Vim ninja
+
+```text
+Vim
+# Append to .vimrc
+set number
+```
+
+
+
