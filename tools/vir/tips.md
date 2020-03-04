@@ -366,6 +366,20 @@ man sort
   -M, --month-sort            compare (unknown) < 'JAN' < ... < 'DEC'
   -r, --reverse               reverse the result of comparisons
   -n, --numeric-sort          compare according to string numerical value
+  
+#################  
+  
+#!/bin/bash
+
+while : ; do
+
+w
+sleep 3
+true
+done
+
+
+#################
 ```
 
 ## Vi - Vim ninja
