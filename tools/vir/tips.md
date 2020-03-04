@@ -200,24 +200,6 @@ USAGE:
 
 ## CMD ninja
 
-### Process output
-
-```text
-#!/bin/bash
-
-while : ; do
-
-w
-sleep 3
-true
-done
-
-
-#################
-```
-
-### 
-
 ### Stress tools
 
 #### CPU
