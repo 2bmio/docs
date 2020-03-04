@@ -200,6 +200,88 @@ USAGE:
 
 ## CMD ninja
 
+### Process output
+
+```text
+#!/bin/bash
+
+while : ; do
+
+w
+sleep 3
+true
+done
+
+
+#################
+```
+
+### 
+
+### Stress tools
+
+#### CPU
+
+The following command will generate a CPU load by compressing a stream of random data and then sending it to `/dev/null`:
+
+```text
+cat /dev/urandom | gzip -9 > /dev/null
+```
+
+If you require a greater load or have a multi-core system simply keep compressing and decompressing the data as many times as you need e.g.:
+
+```text
+cat /dev/urandom | gzip -9 | gzip -d | gzip -9 | gzip -d > /dev/null
+```
+
+#### Memory
+
+The following process will reduce the amount of free RAM. It does this by creating a file system in RAM and then writing files to it. You can use up as much RAM as you need to by simply writing more files.
+
+First, create a mount point then mount a `ramfs` filesystem there:
+
+```text
+mkdir z
+mount -t ramfs ramfs z/
+```
+
+Then, use `dd` to create a file under that directory. Here a 128MB file is created:
+
+```text
+dd if=/dev/zero of=z/file bs=1M count=128
+```
+
+The size of the file can be set by changing the following operands:
+
+* **bs=** Block Size. This can be set to any number followed **B** for bytes, **K** for kilobytes, **M** for megabytes or **G** for gigabytes.
+* **count=** The number of blocks to write.
+
+#### Disk
+
+We will create disk I/O by firstly creating a file, and then use a for loop to repeatedly copy it.
+
+This command uses `dd` to generate a 1GB file of zeros:
+
+```text
+dd if=/dev/zero of=loadfile bs=1M count=1024
+```
+
+The following command starts a for loop that runs 10 times. Each time it runs it will copy `loadfile` over `loadfile1`:
+
+```text
+for i in {1..10}; do cp loadfile loadfile1; done
+```
+
+If you want it to run for a longer or shorter time change the second number in `{1..10}`.
+
+If you prefer the process to run forever until you kill it with `CTRL+C` use the following command:
+
+```text
+while true; do cp loadfile loadfile1; done
+```
+
+
+
 ### CPU output
 
 ```text
