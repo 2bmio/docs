@@ -94,7 +94,11 @@ sudo ln -sf ~/.kube/01-extras/bin/kubectl-$KUBECTLVERSION /usr/local/bin/kubectl
 #### Krew
 
 ```text
-# show all plugins
+
+# search all available plugins
+k krew serarch
+
+# show all installed plugins
 k krew list
 
 k kubectl krew update
