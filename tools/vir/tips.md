@@ -221,6 +221,21 @@ If you require a greater load or have a multi-core system simply keep compressin
 cat /dev/urandom | gzip -9 | gzip -d | gzip -9 | gzip -d > /dev/null
 ```
 
+```text
+vi cpu-stress.sh
+ 
+#!/bin/bash
+while true
+do
+  date +"%H:%M:%S"
+  sleep 1
+  sleep 0.005
+  sleep 0.001
+done
+ 
+chmod  +x cpu-stress.sh
+```
+
 #### Memory
 
 The following process will reduce the amount of free RAM. It does this by creating a file system in RAM and then writing files to it. You can use up as much RAM as you need to by simply writing more files.
