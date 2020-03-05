@@ -95,8 +95,9 @@ sudo ln -sf ~/.kube/01-extras/bin/kubectl-$KUBECTLVERSION /usr/local/bin/kubectl
 
 ```text
 # show all plugins
-kubectl krew search
-kubectl krew update
+k krew list
+
+k kubectl krew update
 
 # install a plugin named "view-secret"
 kubectl krew install XXXXXX
