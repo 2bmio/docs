@@ -360,7 +360,14 @@ microk8s.kubectl port-forward -n kube-system service/kubernetes-dashboard 10443:
 https://[microk8s-master-ip]:10443
 ```
 
+## Kustomize
 
+### install
+
+```text
+curl -s "https://raw.githubusercontent.com/\
+kubernetes-sigs/kustomize/master/hack/install_kustomize.sh"  | bash
+```
 
 
 
