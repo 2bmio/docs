@@ -233,7 +233,7 @@ do
   sleep 0.001
 done
  
-chmod  +x cpu-stress.sh
+chmod  +x cpu-stress.sh && ./cpu-stress.sh
 ```
 
 #### Memory
