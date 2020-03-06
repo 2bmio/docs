@@ -91,7 +91,7 @@ sudo ln -sf ~/.kube/01-extras/bin/kubectl-$KUBECTLVERSION /usr/local/bin/kubectl
 
 ### [Plugins](https://github.com/kubernetes-sigs/krew)
 
-#### Krew
+#### [Krew](https://krew.sigs.k8s.io/docs/user-guide/setup/install/)
 
 ```text
 
