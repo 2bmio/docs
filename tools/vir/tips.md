@@ -18,8 +18,16 @@ mv kubectl kubectl-$KUBECTLVERSION && mv kubectl-$KUBECTLVERSION ~/.kube/01-extr
 sudo ln -sf ~/.kube/01-extras/bin/kubectl-$KUBECTLVERSION /usr/local/bin/kubectl
 
 # kube-ps1
+```
 
+### Logging
 
+```text
+# if you have multiple pods
+kubectl -n kube-system logs -f $(kubectl -n kube-system get pods -l app=traefik  -o jsonpath='{.items[0].metadata.name}')
+
+# if you have just one pod
+kubectl -n kube-system logs -f -l app=traefik
 
 ```
 
