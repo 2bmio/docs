@@ -339,7 +339,7 @@ microk8s.add-node
 
 microk8s.status
 microk8s.enable --help
-microk8s.enable dns dashboard
+microk8s.enable dns storage dashboard
 
 
 # old way → microk8s.enable dns dashboard ingress helm
