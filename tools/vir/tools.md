@@ -273,11 +273,11 @@ multipass launch --name k8s-master-2 --mem 2G --disk 20G
 multipass launch --name k8s-master-3 --mem 2G --disk 20G
 multipass launch --name k8s-worker-1 --mem 2G --disk 10G
 multipass launch --name k8s-worker-2 --mem 2G --disk 10G
-multipass launch --name k8s-worker- --mem 2G --disk 10G
+multipass launch --name k8s-worker-3 --mem 2G --disk 10G
 
 # getting on
 multipass list
-muttipass shell k8s-master
+multipass shell k8s-master
 
 ## using classic ssh with key
 ### copy the new key to user path
