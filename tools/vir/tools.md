@@ -269,8 +269,9 @@ multipass launch --name k8s-master --mem 8G --disk 40G
 
 ## multinode 
 multipass launch --name k8s-master --mem 2G --disk 20G
-multipass launch --name k8s-app-1 --mem 3G --disk 10G
-multipass launch --name k8s-app-2 --mem 3G --disk 10G
+multipass launch --name k8s-worker-1 --mem 3G --disk 10G
+multipass launch --name k8s-worker-2 --mem 3G --disk 10G
+multipass launch --name k8s-worker-2 --mem 3G --disk 10G
 
 # getting on
 multipass list
