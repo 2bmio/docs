@@ -268,10 +268,12 @@ snap info multipass
 multipass launch --name k8s-master --mem 8G --disk 40G
 
 ## multinode 
-multipass launch --name k8s-master --mem 2G --disk 20G
-multipass launch --name k8s-worker-1 --mem 3G --disk 10G
-multipass launch --name k8s-worker-2 --mem 3G --disk 10G
-multipass launch --name k8s-worker-2 --mem 3G --disk 10G
+multipass launch --name k8s-master-1 --mem 2G --disk 20G
+multipass launch --name k8s-master-2 --mem 2G --disk 20G
+multipass launch --name k8s-master-3 --mem 2G --disk 20G
+multipass launch --name k8s-worker-1 --mem 2G --disk 10G
+multipass launch --name k8s-worker-2 --mem 2G --disk 10G
+multipass launch --name k8s-worker- --mem 2G --disk 10G
 
 # getting on
 multipass list
