@@ -210,6 +210,10 @@ USAGE:
 
 
       ```
+2. Tuner and Port fordwarding
+   1. ```text
+      # ssh -i ~/.ssh/id_rsa -f <USER>@<HOST> -L <PORT>:localhost:<PORT> -N
+      ```
 
 ## CMD ninja
 
