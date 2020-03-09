@@ -86,6 +86,7 @@ kubectl -n kube-system logs -f -l app=traefik
       oc adm top nodes --heapster-namespace='openshift-infra' --heapster-scheme="https"
       oc adm top pods --heapster-namespace='openshift-infra' --heapster-scheme="https" --all-namespaces
 
+
       ```
 9. **Traerte el estado de los componentes**
    1. ```text
