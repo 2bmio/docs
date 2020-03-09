@@ -18,6 +18,10 @@ mv kubectl kubectl-$KUBECTLVERSION && mv kubectl-$KUBECTLVERSION ~/.kube/01-extr
 sudo ln -sf ~/.kube/01-extras/bin/kubectl-$KUBECTLVERSION /usr/local/bin/kubectl
 
 # kube-ps1
+
+# get all Deployment and DeploymenConfig
+kubectl get dc --all-namespaces > all-dc.txt
+
 ```
 
 ### Logging
