@@ -446,5 +446,7 @@ set relativenumber
 
 ```
 
-## jq + jid
+## [jq](https://stedolan.github.io/jq/) + [jid](https://github.com/simeji/jid)
+
+## 
 
