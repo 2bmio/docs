@@ -461,6 +461,11 @@ kubectl get no -o json | jq -r '.items[] | select(.spec.unschedulable!=true) | [
 
 # Jq also allows us to sort:
 kubectl get po -o json | jq -r '.items | sort_by(.spec.nodeName)[] | [.spec.nodeName,.metadata.name] | @tsv'
+
+#
+kubectl get po -o wide --sort-by=.spec.nodeName
+
+
 ```
 
 ## 
