@@ -453,7 +453,8 @@ set relativenumber
 #
 kubectl get no -o json | jid -q | pbcopy
 
-
+#
+kubectl get no -o json | jq -r '[.items[] | {name:.metadata.name, id:.spec.externalID, unschedulable:.spec.unschedulable}]'
 
 ```
 
