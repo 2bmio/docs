@@ -448,5 +448,16 @@ set relativenumber
 
 ## [jq](https://stedolan.github.io/jq/) + [jid](https://github.com/simeji/jid)
 
+```text
+
+#
+kubectl get no -o json | jid -q | pbcopy
+
+
+
+```
+
+## 
+
 ## 
 
