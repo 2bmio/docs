@@ -446,15 +446,25 @@ set relativenumber
 
 ```
 
-## [jq](https://stedolan.github.io/jq/) + [jid](https://github.com/simeji/jid)
+## [jq](https://stedolan.github.io/jq/) + yq + [jid](https://github.com/simeji/jid)
 
 ```text
 
 #
 kubectl get no -o json | jid -q | pbcopy
 
-#
+# Boxing the result into it's own array and constructing a new object combining several nested attributes gives us the following query:
 kubectl get no -o json | jq -r '[.items[] | {name:.metadata.name, id:.spec.externalID, unschedulable:.spec.unschedulable}]'
+
+# Converting the json array into a tabular output with jq can be done using @tsv as follows:
+kubectl get no -o json | jq -r '.items[] | select(.spec.unschedulable!=true) | [.metadata.name,.spec.externalID] | @tsv'
+
+# Jq also allows us to sort:
+kubectl get po -o json | jq -r '.items | sort_by(.spec.nodeName)[] | [.spec.nodeName,.metadata.name] | @tsv'
+
+#
+kubectl get po -o wide --sort-by=.spec.nodeName
+
 
 ```
 
