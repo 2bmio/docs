@@ -6,7 +6,7 @@
 
 ## Based on Red Hat
 
-## RHEL
+### RHEL based
 
 ### common commands
 
