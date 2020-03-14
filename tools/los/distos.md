@@ -83,5 +83,15 @@ systemctl reboot
 }
 ```
 
+## Based on Arch
 
+### ALMA
+
+```text
+sudo alma create /dev/disk/by-id/usb-TOSHIBA_TransMemory_000AEBFFD790B920730C0138-0:0
+sudo alma chroot /dev/disk/by-id/usb-TOSHIBA_TransMemory_000AEBFFD790B920730C0138-0:0
+
+pacman -S bridge-utils wireshark-cli net-tools
+
+```
 
