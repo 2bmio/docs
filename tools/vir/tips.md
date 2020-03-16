@@ -4,7 +4,6 @@
 
 ```text
 bash --rcfile /tmp/.xx.sshrc.XXXX/sshrc.bashrc
-
 ```
 
 ## K8S ninja
