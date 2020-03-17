@@ -468,7 +468,16 @@ kubectl get po -o wide --sort-by=.spec.nodeName
 
 ```
 
-## 
+## curl
+
+```text
+# get trace
+curl -lv https://sub.domain.tld/checks
+# get response
+curl -kI https://sub.domain.tld
+
+
+```
 
 ## 
 
