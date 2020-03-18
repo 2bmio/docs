@@ -89,6 +89,13 @@ kubectl -n kube-system logs -f -l app=traefik
       kubectl top pods --heapster-namespace='openshift-infra' --heapster-scheme="https" --all-namespaces
       kubectl top nodes --heapster-namespace='openshift-infra' --heapster-scheme="https"
 
+      kubectl top pods --heapster-namespace='openshift-infra' --heapster-scheme="https" | sort -k2 -n
+      kubectl top nodes --heapster-namespace='openshift-infra' --heapster-scheme="https" --all-namespaces
+
+      CPU optiona reverse case append -r
+      | sort -k2 -n
+      MEMORY optiona reverse case append -r
+      | sort -k3 -n
 
 
       ## OCP 3.6
