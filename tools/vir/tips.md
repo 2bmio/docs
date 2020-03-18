@@ -86,6 +86,11 @@ kubectl -n kube-system logs -f -l app=traefik
       kubectl top node <nombre-del-nodo>
       kubectl top nodes
 
+      kubectl top pods --heapster-namespace='openshift-infra' --heapster-scheme="https" --all-namespaces
+      kubectl top nodes --heapster-namespace='openshift-infra' --heapster-scheme="https"
+
+
+
       ## OCP 3.6
       oc adm top nodes --heapster-namespace='openshift-infra' --heapster-scheme="https"
       oc adm top pods --heapster-namespace='openshift-infra' --heapster-scheme="https" --all-namespaces
