@@ -497,3 +497,9 @@ curl -kI https://sub.domain.tld
 
 ```
 
+## Sed
+
+```text
+sed 's/deploymentconfigs[\/&]//g'
+```
+
