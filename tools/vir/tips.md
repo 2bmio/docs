@@ -500,7 +500,12 @@ curl -kI https://sub.domain.tld
 ## Sed
 
 ```text
+# remove 'deploymentconigs/' from a text
 sed 's/deploymentconfigs[\/&]//g'
+
+# remove first line in a text
+sed '1d' dc-temp2.txt  > dc.txt
+
 ```
 
 ## awk
