@@ -508,7 +508,7 @@ sed '1d' dc-temp2.txt  > dc.txt
 
 ```
 
-## awk
+## [awk](https://www.tutorialspoint.com/awk/awk_basic_examples.htm)
 
 **Parámetros de awk**
 
