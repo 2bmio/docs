@@ -114,6 +114,38 @@ kubectl -n kube-system logs -f -l app=traefik
        kubectl api-versions
        ```
 
+### BatchScale
+
+```text
+#!/bin/bash
+
+LIST='namespace-1 namespace-2 namespace-3'
+input=''
+for namespace in $LIST
+do
+  kubectl get dc -n $namespace > /tmp/dc-$namespace.txt
+  awk '{print $1, $3, $4}' /tmp/dc-$namespace.txt > /tmp/dc-$namespace-dribble.txt
+  sed '1d' /tmp/dc-$namespace-dribble.txt > /tmp/dc-$namespace.txt
+
+  input="/tmp/dc-$namespace.txt"
+  while IFS=" " read -r name desired current remainder
+    do
+      # Skip if the dc have 0 as desired state
+      if [ "$desired" -eq 0 ]; then
+          echo "nothing to do here! →→→ $name"
+      # Scale when desired stata is other than 0
+        elif [ "$desired" -gt 0 ]; then
+        # kubectl scale dc $1 -n $namespace --replicas=0
+          echo "we need scaledown →→→ $name"
+      fi
+    sleep 3
+    done < "$input"
+done
+
+```
+
+
+
 ### [Plugins](https://github.com/kubernetes-sigs/krew)
 
 #### [Krew](https://krew.sigs.k8s.io/docs/user-guide/setup/install/)
