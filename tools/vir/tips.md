@@ -503,3 +503,18 @@ curl -kI https://sub.domain.tld
 sed 's/deploymentconfigs[\/&]//g'
 ```
 
+## awk
+
+**Parámetros de awk**
+
+Por otro lado, puedes utilizar algunos parámetros que te facilitarán enormemente el trabajo con `awk`. Algunos de estos parámetros son los siguientes,
+
+* `$0`. Se corresponde con una línea completa.
+* `$1, $2, $3,....`. Se corresponden con la primera palabra, con la segunda palabra, etc.
+* `FS`. Es el separador.
+* `NF`. Es el número de palabras de una línea.
+
+```text
+awk '{print $1, $3, $4}' dc-temp.txt
+```
+
