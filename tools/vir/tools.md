@@ -378,3 +378,7 @@ kubernetes-sigs/kustomize/master/hack/install_kustomize.sh"  | bash
 kustomize build .
 ```
 
+## SELinux
+
+
+
