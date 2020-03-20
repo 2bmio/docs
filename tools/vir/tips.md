@@ -6,6 +6,44 @@
 bash --rcfile /tmp/.xx.sshrc.XXXX/sshrc.bashrc
 ```
 
+### rbash
+
+```text
+# restricted bash
+
+cp /bin/bash /bin/rbash
+
+# new user
+useradd -s /bin/rbash localuser
+
+# existing user
+usermod -s /bin/rbash localuser
+
+# create dir for allowd progs
+mkdir /home/localuser/programs
+
+
+
+# cat /home/localuser/.bash_profile  
+# .bash_profile  
+
+# Get the aliases and functions  
+if [ -f ~/.bashrc ]; then  
+. ~/.bashrc  
+fi  
+# User specific environment and startup programs  
+PATH=$HOME/programs  
+export PATH
+
+
+
+
+
+
+
+
+```
+
 ## K8S ninja
 
 ### [Essential](https://agrimprasad.com/post/supercharge-kubernetes-setup/)
