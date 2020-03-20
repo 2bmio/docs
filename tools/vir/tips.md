@@ -36,7 +36,9 @@ PATH=$HOME/programs
 export PATH
 
 
-
+# add/remove inmutable permissions
+chattr +i /home/localuser/.bash_profile
+chattr -i /home/localuser/.bash_profile
 
 
 
