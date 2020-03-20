@@ -36,6 +36,11 @@ PATH=$HOME/programs
 export PATH
 
 
+# create soft links to bin
+ln -s /bin/date /home/localuser/programs/  
+ln -s /bin/ls /home/localuser/programs/  
+
+
 # add/remove inmutable permissions
 chattr +i /home/localuser/.bash_profile
 chattr -i /home/localuser/.bash_profile
