@@ -68,6 +68,9 @@ sudo ln -sf ~/.kube/01-extras/bin/kubectl-$KUBECTLVERSION /usr/local/bin/kubectl
 # get all Deployment and DeploymenConfig
 kubectl get dc --all-namespaces > all-dc.txt
 
+# namespaces
+kubectl get netnamespaces
+
 ```
 
 ### Logging
