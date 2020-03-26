@@ -84,6 +84,8 @@ kubectl -n kube-system logs -f -l app=traefik
 
 ```
 
+#### Top 10
+
 1. **Kubectl Autocomplete**
    1. ```text
       source <(kubectl completion zsh)
@@ -264,7 +266,24 @@ USAGE:
 
 ```
 
-#### 
+### Restart / Evacuate NODE
+
+```text
+oc adm top nodes --heapster-namespace='openshift-infra' --heapster-scheme="https"
+
+oc get pods -o wide --all-namespaces | grep -i <NodeName>
+
+oc get nodes
+
+oc adm manage-node <NodeName> --schedulable=false
+
+oc adm drain <NodeName> --grace-period=90 --timeout=120s --ignore-daemonsets --delete-local-data
+
+oc get pods -o wide --all-namespaces | grep -i <NodeName> 
+
+oc adm manage-node <NodeName> --schedulable=true
+
+```
 
 ## SSH ninja
 
