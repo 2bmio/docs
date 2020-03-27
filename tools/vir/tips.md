@@ -137,11 +137,13 @@ kubectl -n kube-system logs -f -l app=traefik
       kubectl top node <nombre-del-nodo>
       kubectl top nodes
 
-      kubectl top pods --heapster-namespace='openshift-infra' --heapster-scheme="https" --all-namespaces
       kubectl top nodes --heapster-namespace='openshift-infra' --heapster-scheme="https"
+      kubectl top nodes --heapster-namespace='openshift-infra' --heapster-scheme="https" --all-namespaces
 
       kubectl top pods --heapster-namespace='openshift-infra' --heapster-scheme="https" | sort -k3 -n
-      kubectl top nodes --heapster-namespace='openshift-infra' --heapster-scheme="https" --all-namespaces
+      kubectl top pods --heapster-namespace='openshift-infra' --heapster-scheme="https" --all-namespaces
+      kubectl top pods --heapster-namespace='openshift-infra' --heapster-scheme="https" --all-namespaces | grep 'mortgage\|mdw\|senda\|front\|mdw-svc' | sort -k3 -g -r
+
 
       CPU optiona reverse case append -r
       | sort -k2 -n
