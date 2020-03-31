@@ -46,10 +46,6 @@ chattr +i /home/localuser/.bash_profile
 chattr +i /home/localuser/.bashrc
 chattr -i /home/localuser/.bash_profile
 
-
-
-
-
 ```
 
 ## K8S ninja
