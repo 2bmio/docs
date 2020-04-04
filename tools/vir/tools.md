@@ -380,5 +380,36 @@ kustomize build .
 
 ## SELinux
 
+## Nginx
 
+```text
+server {
+    listen *:80;
+    server_name pxy.pdam.gos.ooo;
+    proxy_set_header Host pxy.pdam.gos.ooo;
+    location / {
+    rewrite ^(.*)$ https://pxy.pdam.gos.ooo$1 permanent;
+    }
+}
+
+server {
+    listen *:443;
+    server_name pxy.pdam.gos.ooo;
+    proxy_set_header Host pxy.pdam.gos.ooo;
+
+    #The port used for secured Admin Console access:
+    set $second_server-or-proxy_port 443;
+    #IP address for machine running second_server-or-proxy server:
+    set $second_server-or-proxy_ip 192.168.1.130;
+    ssl     off;
+    ssl_protocols     SSLv3 TLSv1;
+    ssl_certificate     /home/user/dump/traefik/certs/pxy.pdam.gos.ooo.crt;
+    ssl_certificate_key     /home/user/dump/traefik/private/pxy.pdam.gos.ooo.key;
+
+location / {
+    proxy_pass https://$second_server-or-proxy_ip:$second_server-or-proxy_port;
+    }
+}
+
+```
 
