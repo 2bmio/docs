@@ -330,7 +330,25 @@ oc adm manage-node <NodeName> --schedulable=true
       # ssh -i ~/.ssh/id_rsa -f <USER>@<HOST> -L <PORT>:localhost:<PORT> -N
       ```
 
-## CMD ninja
+## Docker ninja
+
+```text
+# docker ps -q will print only the hex IDs, which is actually just as good for scripting purposes. I type extremely regularly
+
+docker ps -a -q | xargs docker rm -v
+
+# which deletes all of the (stopped) containers. (And also its sibling,
+
+docker images -f dangling=true -q | xargs docker rmi
+
+# if 
+docker ps | less -S
+
+```
+
+## CMD
+
+##  ninja
 
 ### Stress tools
 
