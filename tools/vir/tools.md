@@ -413,3 +413,19 @@ location / {
 
 ```
 
+## asdf
+
+```text
+asdf update
+asdf plugins list all
+asdf plugin add kubectl
+
+asdf list all kubectl
+
+asdf install kunectl 1.17.4
+asdf install kubectl 1.17.4
+
+asdf global kubectl 1.17.4
+
+```
+
