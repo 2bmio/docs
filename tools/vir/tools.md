@@ -417,7 +417,7 @@ location / {
 
 ```text
 asdf update
-asdf plugins list all
+asdf plugin list all
 asdf plugin add kubectl
 
 asdf list all kubectl
