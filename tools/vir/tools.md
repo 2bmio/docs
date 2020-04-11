@@ -434,13 +434,20 @@ asdf global kubectl 1.17.4
 ```text
 backup luks partition
 
+
+
+
 1. Boot clonezilla
 
 2. Drop into the command line
 
 3. open the encrypted external drive partition
 
-  cryptsetup luksOpen /dev/sda3 backup
+  sudo su
+
+  blkid | grep crypto
+
+  cryptsetup luksOpen /dev/sdd1 backup
 
 4. mount as partimag
 
