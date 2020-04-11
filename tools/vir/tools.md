@@ -429,3 +429,53 @@ asdf global kubectl 1.17.4
 
 ```
 
+## Clonezilla
+
+```text
+backup luks partition
+
+1. Boot clonezilla
+
+2. Drop into the command line
+
+3. open the encrypted external drive partition
+
+  cryptsetup luksOpen /dev/sda3 backup
+
+4. mount as partimag
+
+  mount /dev/mapper/backup /home/partimag
+
+5. open the internal encrypted partitions
+
+  cryptsetup luksOpen /dev/sda3 crypt1
+  (enter pass)
+  cryptsetup luksOpen /dev/sdb1 crypt2
+  (enter pass)
+
+6. lvm should automatically appear in /dev/mapper
+  e.g. /dev/mapper/fedora-home
+       /dev/mapper/fedora-root
+  etc
+  if not can try vgchange -ay
+
+7. Perform backup with partclone
+
+  partclone.ext4 -c -s /dev/mapper/fedora-root -o /home/partimag/backup/fedora-root-2017-09-24.img
+
+8. When complete can restore to an image file to be able to mount and read:
+
+  touch /mnt/backup/restored.img
+  partclone.restore -C -s /home/partimag/backup/fedora-root-2017-09-24.img -O /mnt/backup/restored.img
+  mount -t ext4 /mnt/backup/restored.img /mnt/data -o loop
+
+  try to restore to a different device especially if the image is large as the data transfer speed will be halved. It took 8 hours for a 1.4TB partition that was   50% used.
+
+9. If unable to mount image because of "ext4 bad geometry" then fix the image:
+
+  e2fsck -f /mnt/backup/restored.img
+  resize2fs /mnt/backup/restored.img
+  
+  then try to mount again
+```
+
