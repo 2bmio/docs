@@ -453,6 +453,18 @@ backup luks partition
 
   mount /dev/mapper/backup /home/partimag
 
+
+
+
+
+
+
+
+
+
+
+
+
 5. open the internal encrypted partitions
 
   cryptsetup luksOpen /dev/sda3 crypt1
