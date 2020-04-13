@@ -498,3 +498,41 @@ backup luks partition
   then try to mount again
 ```
 
+## Rsync
+
+```text
+# Copy/Sync Files and Directory Locally
+rsync -avzh ubi /home/aa/0-attachup
+
+# Copy/Sync Files and Directory to or From a Server
+rsync -avz rpmpkgs/ root@192.168.0.101:/home/
+rsync -avzh root@192.168.0.100:/home/tarunika/rpmpkgs /tmp/myrpms
+
+# Rsync Over SSH
+rsync -avzhe ssh root@192.168.0.100:/root/install.log /tmp/
+rsync -avzhe ssh backup.tar root@192.168.0.100:/backups/
+
+# Show Progress While Transferring Data with rsync
+rsync -avzhe ssh --progress /home/rpmpkgs root@192.168.0.100:/root/rpmpkgs
+
+# Use of –include and –exclude Options
+rsync -avze ssh --include 'R*' --exclude '*' root@192.168.0.101:/var/lib/rpm/ /root/rpm
+
+# Use of –delete Option
+rsync -avz --delete root@192.168.0.100:/var/lib/rpm/ .
+
+# Set the Max Size of Files to be Transferred
+rsync -avzhe ssh --max-size='200k' /var/lib/rpm/ root@192.168.0.100:/root/tmprpm
+
+# Automatically Delete source Files after successful Transfer
+rsync --remove-source-files -zvh backup.tar /tmp/backups/
+
+# Do a Dry Run with rsync
+rsync --dry-run --remove-source-files -zvh backup.tar /tmp/backups/
+
+# Set Bandwidth Limit and Transfer File
+rsync --bwlimit=100 -avzhe ssh  /var/lib/rpm/  root@192.168.0.100:/root/tmprpm/
+
+
+```
+
