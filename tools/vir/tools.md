@@ -505,6 +505,9 @@ backup luks partition
 rsync -avzh --progress ubi /home/aa/0-attachup
 rsync -avzh --progress /home/aa/0-attachup/ubi /run/media/aa/attachup-1
 
+# Sync with mirror mode
+rsync -vazh --delete /home/aa/0-attachup/ubi /run/media/aa/attachup-1
+
 # Copy/Sync Files and Directory to or From a Server
 rsync -avz rpmpkgs/ root@192.168.0.101:/home/
 rsync -avzh root@192.168.0.100:/home/tarunika/rpmpkgs /tmp/myrpms
