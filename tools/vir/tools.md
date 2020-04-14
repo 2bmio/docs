@@ -502,7 +502,8 @@ backup luks partition
 
 ```text
 # Copy/Sync Files and Directory Locally
-rsync -avzh ubi /home/aa/0-attachup
+rsync -avzh --progress ubi /home/aa/0-attachup
+rsync -avzh --progress /home/aa/0-attachup/ubi /run/media/aa/attachup-1
 
 # Copy/Sync Files and Directory to or From a Server
 rsync -avz rpmpkgs/ root@192.168.0.101:/home/
