@@ -540,3 +540,12 @@ rsync --bwlimit=100 -avzhe ssh  /var/lib/rpm/  root@192.168.0.100:/root/tmprpm/
 
 ```
 
+## Grep
+
+```text
+grep -r -i --include \*.sh "system:serviceaccount:default:rundeck" ~/000
+
+
+
+```
+
