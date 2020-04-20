@@ -556,5 +556,8 @@ scrapy startproject sector6202
     scrapy genspider example example.com
 
 
+#xpath utils 
+(//li[@class='arrow'])[last()]/a
+
 ```
 
