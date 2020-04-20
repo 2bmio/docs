@@ -551,6 +551,10 @@ grep -r -i --include \*.sh "system:serviceaccount:default:rundeck" ~/000
 ## Scrapy
 
 ```text
-scrapy startproject sector-6202
+scrapy startproject sector6202
+    cd sector6202
+    scrapy genspider example example.com
+
+
 ```
 
