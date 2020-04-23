@@ -564,6 +564,7 @@ scrapy startproject sector6202
 (//td[@class="tal website"])[1]/a/text()
 
 
+
 Rule(LinkExtractor(allow = (), restrict_xpaths = ('(//li[@class="arrow"])[last()]/a'))),
 Rule(LinkExtractor(allow = (), restrict_xpaths = ('(//td[@class="tal"])/a')),
 
