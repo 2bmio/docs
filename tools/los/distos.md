@@ -1,4 +1,4 @@
-# Distos
+# Arch-Debian-RedHat
 
 ## Based on Debian
 
