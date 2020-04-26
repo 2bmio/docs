@@ -192,6 +192,9 @@ $ packer build \
 
 ```text
 
+# to get all available plugins and grep for specific
+gem list --remote vagrant-. | grep yaml
+
 ```
 
 ### packages and addons
