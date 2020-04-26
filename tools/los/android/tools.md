@@ -3,22 +3,21 @@
 ## adb
 
 ```text
-#
+# lock for devices
 adb devices
 
 
-#
+# use the device over wireless
 adb tcpip 3690
 
 
-#
+# connect via wireless over LAN
 adb connect 192.168.1.X:3690
 
-#
+# 
 adb disconnect
 
-#
-
+# send files
 adb push nethunter-hammerhead-marshmallow-kalifs-full-2020.1.zip  /sdcard/nethunter-hammerhead-marshmallow-kalifs-full-2020.1.zip 
 ```
 
