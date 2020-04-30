@@ -95,3 +95,26 @@ pacman -S bridge-utils wireshark-cli net-tools
 
 ```
 
+## Network CrossOs
+
+```text
+# archlinux
+/etc/netctl/
+systemctl disable NetworkManager
+systemctl enable netctl
+
+vim /etc/resolv.conf
+nameserver XXXX
+
+··········································
+# redhat
+/etc/sysconfig/network-scripts
+
+··········································
+# ubuntu
+/etc/netplan
+
+
+
+```
+
