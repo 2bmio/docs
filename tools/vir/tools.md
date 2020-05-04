@@ -591,3 +591,25 @@ dbus-launch /usr/bin/startxfce4 &
 
 ```
 
+## Chrome remote desktop crd
+
+```text
+Set up CRD by issuing the command:
+crd --setup
+as a normal user.
+
+After that, enable access to CRD in your chrome or chromium browser.
+
+To {enable,start} the service, issue the command:
+systemctl --user {enable,start} chrome-remote-desktop
+This only really makes sense for servers.
+
+You can also start the chrome remote desktop server by issuing the command:
+crd --start
+as a normal user.
+This will prompt you to set up your CRD if it hasn't been set up already.
+
+Go to https://support.google.com/chrome/answer/1649523 for more information.
+
+```
+
