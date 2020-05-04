@@ -118,3 +118,17 @@ nameserver XXXX
 
 ```
 
+## Floating Window Manager
+
+```text
+# XFCE
+# archlinux
+pacman -S --noconfirm xfce4 xfce4-goodies lxdm
+systemctl enable lxdm
+
+```
+
+## Tiling Window Manager
+
+
+
