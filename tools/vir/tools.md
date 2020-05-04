@@ -613,3 +613,16 @@ Go to https://support.google.com/chrome/answer/1649523 for more information.
 
 ```
 
+## Ipcalc
+
+```text
+ipcalc takes an IP address and netmask and calculates the resulting broadcast,
+network
+
+ipcalc 192.168.0.1/24
+ipcalc 192.168.0.1/255.255.128.0
+ipcalc 192.168.0.1 255.255.128.0 255.255.192.0
+ipcalc 192.168.0.1 0.0.63.255
+
+```
+
