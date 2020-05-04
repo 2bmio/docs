@@ -106,6 +106,12 @@ systemctl enable netctl
 vim /etc/resolv.conf
 nameserver XXXX
 
+
+# interface script
+/etc/conf.d/network@ens19
+
+systemctl enable/disable network@ens19.service
+
 ··········································
 # redhat
 /etc/sysconfig/network-scripts
