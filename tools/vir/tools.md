@@ -573,3 +573,21 @@ Rule(LinkExtractor(allow = (), restrict_xpaths = ('(//td[@class="tal"])/a')),
 
 ```
 
+## Guacamole
+
+```text
+
+# Archlinux + XFCE
+
+~/.vnc/xstartup
+
+#!/bin/sh
+
+unset SESSION_MANAGER
+unset DBUS_SESSION_BUS_ADDRESS
+dbus-launch /usr/bin/startxfce4 &
+
+
+
+```
+
