@@ -59,6 +59,7 @@ touch .gitattributes
 ## activate merge ours
 
 git config merge.ours.driver true
+git config --global merge.ours.driver true
 
     cat .git/config
     [merge "ours"]
