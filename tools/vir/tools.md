@@ -45,6 +45,27 @@ git submodule update --init --recursive
 git submodule update --recursive --remote
 ### or
 git pull --recurse-submodules
+
+
+# tell git exclude specific files when doing a git merge
+## on the main git directory
+
+touch .gitattributes
+
+    *__dev* merge=ours
+    .gitattributes merge=ours
+    .gitignore merge=ours
+
+## activate merge ours
+
+git config merge.ours.driver true
+
+    cat .git/config
+    [merge "ours"]
+        driver = true
+    
+git-archive
+
 ```
 
 ## Ansible
