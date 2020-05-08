@@ -22,3 +22,18 @@ downgrade linux
 
 ```
 
+## docker
+
+```text
+
+# tar: invalid magic when building docker image
+# ar: invalid magic
+# tar: short read
+
+docker build --tag=doctl --build-arg DOCTL_VERSION=1.33.1 .
+
+
+```
+
+
+
