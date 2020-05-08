@@ -48,7 +48,18 @@ git pull --recurse-submodules
 
 
 # tell git exclude specific files when doing a git merge
-## on the main git directory
+
+## FIRST activate merge ours
+git config --global merge.ours.driver true
+git config merge.ours.driver true
+
+    cat .git/config
+    [merge "ours"]
+        driver = true
+
+
+
+## SECOND on the main git directory
 
 touch .gitattributes
 
@@ -56,14 +67,6 @@ touch .gitattributes
     .gitattributes merge=ours
     .gitignore merge=ours
 
-## activate merge ours
-
-git config merge.ours.driver true
-git config --global merge.ours.driver true
-
-    cat .git/config
-    [merge "ours"]
-        driver = true
     
 git-archive
 
