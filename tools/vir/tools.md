@@ -583,6 +583,19 @@ scrapy startproject sector6202
     cd sector6202
     scrapy genspider example example.com
 
+# running two crawl at once
+scrapy crawl selenium && sleep 5 && scrapy crawl html
+
+____________________________
+❯ cat run.py
+# !/usr/bin/env python
+
+import subprocess
+
+subprocess.call('for spider in spider-selenium spider-html; do scrapy crawl $spider -L INFO; done', shell=True)
+
+
+____________________________
 
 #xpath utils 
 (//li[@class='arrow'])[last()]/a
