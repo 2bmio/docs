@@ -136,5 +136,9 @@ systemctl enable lxdm
 
 ## Tiling Window Manager
 
+## Maintenance
 
+```text
+topgrade
+```
 
