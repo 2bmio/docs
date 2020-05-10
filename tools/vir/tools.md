@@ -72,6 +72,38 @@ git-archive
 
 ```
 
+### create private fork of a public repo
+
+```text
+# Create a bare clone of the repository.
+git clone --bare git@github.com:usi-systems/easytrace.git
+
+# Create a new private repository on Github and name it easytrace.
+## Mirror-push your bare clone to your new easytrace repository.
+
+cd easytrace.git
+git push --mirror git@github.com:<your_username>/easytrace.git
+
+cd ..
+rm -rf easytrace.git
+cd 
+
+git clone git@github.com:<your_username>/easytrace.git
+
+# If you want, add the original repo as remote to fetch (potential) future changes. Make sure you also disable push on the remote (as you are not allowed to push to it anyway).
+
+git remote add upstream git@github.com:usi-systems/easytrace.git
+git remote set-url --push upstream DISABLE
+
+# You can list all your remotes with git remote -v. You should see:
+
+  origin	git@github.com:<your_username>/easytrace.git (fetch)
+  origin	git@github.com:<your_username>/easytrace.git (push)
+  upstream	git@github.com:usi-systems/easytrace.git (fetch)
+  upstream	DISABLE (push)
+
+```
+
 ## Ansible
 
 ### common commands
