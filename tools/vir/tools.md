@@ -615,6 +615,14 @@ scrapy startproject sector6202
     cd sector6202
     scrapy genspider example example.com
 
+
+# Exporting with Feed Export
+
+scrapy crawl myspider -o data.json 
+scrapy crawl myspider -o data.csv scrapy crawl myspider -o data.xml
+-t json -o outputfile.json
+-t csv -o outputfile.csv
+
 # running two crawl at once
 scrapy crawl selenium && sleep 5 && scrapy crawl html
 
