@@ -1,5 +1,20 @@
 # Tools
 
+## Iptables
+
+```text
+iptables -L
+iptables -S
+iptables -F
+
+
+
+snat_dnat_advantech
+https://gist.github.com/tomasinouk/eec152019311b09905cd
+
+
+```
+
 ## [Popeye](https://github.com/derailed/popeye)
 
 ```text
