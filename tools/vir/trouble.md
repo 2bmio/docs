@@ -35,7 +35,7 @@ docker build --tag=doctl --build-arg DOCTL_VERSION=1.33.1 .
 
 ######## enable docker remote API 
 Navigate to /lib/systemd/system in your terminal and open docker.service file
-vi /lib/systemd/system/docker.service
+vim /lib/systemd/system/docker.service
 
 Find the line which starts with ExecStart and adds -H=tcp://0.0.0.0:2375 to make it look like
 ExecStart=/usr/bin/dockerd -H fd:// -H tcp://0.0.0.0:2375
