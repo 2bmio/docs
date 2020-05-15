@@ -38,7 +38,7 @@ Navigate to /lib/systemd/system in your terminal and open docker.service file
 vi /lib/systemd/system/docker.service
 
 Find the line which starts with ExecStart and adds -H=tcp://0.0.0.0:2375 to make it look like
-ExecStart=/usr/bin/dockerd -H=fd:// -H=tcp://0.0.0.0:2375
+ExecStart=/usr/bin/dockerd -H fd:// -H tcp://0.0.0.0:2375
 Save the Modified File
 
 Reload the docker daemon
