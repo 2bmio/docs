@@ -721,3 +721,24 @@ ipcalc 192.168.0.1 0.0.63.255
 
 ## Speed TEST
 
+## Ansible Tower → AWX
+
+```text
+## 1. Create a new credential type
+## As a Tower admin, you can create a custom credential by clicking on ADMINISTRATION> Credential Types
+
+fields:
+  - id: git_private_key
+    type: string
+    label: private_key
+    secret: true
+    multiline: true
+
+file:
+  template.git_key: "{{ git_private_key  }}"
+extra_vars:
+  secret_key: "{{ tower.filename.git_key  }}"
+
+
+```
+
