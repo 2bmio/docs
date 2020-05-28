@@ -311,6 +311,7 @@ systemctl stop vboxautostart-service.service
 ### VirtualBox - mojave
 
 ```text
+# MOJAVE
 vboxmanage list vms
 
 vboxmanage modifyvm "Mojave" --cpuidset 00000001 000106e5 00100800 0098e3fd bfebfbff
@@ -325,31 +326,13 @@ vboxmanage setextradata "Mojave" "VBoxInternal/Devices/smc/0/Config/DeviceKey" "
 
 vboxmanage setextradata "Mojave" "VBoxInternal/Devices/smc/0/Config/GetKeyFromRealSMC" 1
 
+# base install
 
+sudo pacman -S virtualbox virtualbox-host-modules-arch
 
-
-+  116)  linux-headers    5.6.3.arch1    1  x86_64  (remote)
-+  117)  linux-headers    5.6.3.arch1    1  x86_64  (local)
-   118)  linux-headers    5.6.4.arch1    1  x86_64  (remote)
-   119)  linux-headers    5.6.5.arch1    1  x86_64  (remote)
-   120)  linux-headers    5.6.5.arch2    1  x86_64  (remote)
-   121)  linux-headers    5.6.5.arch3    1  x86_64  (remote)
--  122)  linux-headers    5.6.6.arch1    1  x86_64  (remote)
--  123)  linux-headers    5.6.6.arch1    1  x86_64  (local)
-   124)  linux-headers    5.6.7.arch1    1  x86_64  (remote)
-   125)  linux-headers    5.6.8.arch1    1  x86_64  (remote)
-   126)  linux-headers    5.6.9.arch1    1  x86_64  (remote)
-   127)  linux-headers    5.6.10.arch1   1  x86_64  (remote)
-   128)  linux-headers    5.6.11.arch1   1  x86_64  (remote)
-   129)  linux-headers    5.6.11.arch2   1  x86_64  (remote)
-   130)  linux-headers    5.6.11.arch3   1  x86_64  (remote)
-   131)  linux-headers    5.6.12.arch1   1  x86_64  (remote)
-   132)  linux-headers    5.6.13.arch1   1  x86_64  (remote)
-   133)  linux-headers    5.6.14.arch1   1  x86_64  (remote)
-   134)  linux-headers    5.6.15.arch1   1  x86_64  (remote)
-
-
-
+# fail kernel compatibility
+failed to start Load Kernel Modules
+pacman -R virtualbox virtualbox-host-dkms virtualbox-host-modules-arch
 ```
 
 ## Multipass
