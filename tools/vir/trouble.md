@@ -18,8 +18,13 @@ arch-chroot /mnt
 yay -s downgrade
 downgrade linux
 
+mkinitcpio -p linux
 
 failed to start Load Kernel Modules
+
+pacman -R virtualbox
+virtualbox-host-dkms
+virtualbox-host-modules-arch
 ```
 
 ## docker
