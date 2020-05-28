@@ -91,6 +91,7 @@ git-archive
 
 ```text
 # Create a bare clone of the repository.
+git clone --bare https://github.com/sherifabdlnaby/elastdocker.git
 git clone --bare git@github.com:usi-systems/easytrace.git
 
 # Create a new private repository on Github and name it easytrace.
@@ -302,9 +303,29 @@ systemctl stop vboxautostart-service.service
 
 
 
+
+
+
 ```
 
-### VirtualBox
+### VirtualBox - mojave
+
+```text
+vboxmanage list vms
+
+vboxmanage modifyvm "Mojave" --cpuidset 00000001 000106e5 00100800 0098e3fd bfebfbff
+
+vboxmanage setextradata "Mojave" "VBoxInternal/Devices/efi/0/Config/DmiSystemProduct" "iMac11,3"
+
+vboxmanage setextradata "Mojave" "VBoxInternal/Devices/efi/0/Config/DmiSystemVersion" "1.0"
+
+vboxmanage setextradata "Mojave" "VBoxInternal/Devices/efi/0/Config/DmiBoardProduct" "Iloveapple"
+
+vboxmanage setextradata "Mojave" "VBoxInternal/Devices/smc/0/Config/DeviceKey" "ourhardworkbythesewordsguardedpleasedontsteal(c)AppleComputerInc"
+
+vboxmanage setextradata "Mojave" "VBoxInternal/Devices/smc/0/Config/GetKeyFromRealSMC" 1
+
+```
 
 ## Multipass
 

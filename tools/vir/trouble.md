@@ -42,7 +42,7 @@ ExecStart=/usr/bin/dockerd -H fd:// -H tcp://0.0.0.0:2375
 Save the Modified File
 
 Reload the docker daemon
-systemctl daemon-reload
+sudo systemctl daemon-reload
 
 Restart the container
 sudo service docker restart
